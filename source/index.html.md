@@ -14,7 +14,7 @@ toc_footers:
   - <a href='https://wiki.openmrs.org/display/docs/OpenMRS+SDK+Step+By+Step+Tutorials'>OpenMRS SDK setup guides</a>
 
 includes:
-
+  - welcome
 
 search: true
 ---
