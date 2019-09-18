@@ -1,5 +1,5 @@
 ---
-title: OpenMRS REST API Documentation
+title: OpenMRS Docs
 
 language_tabs:
   - shell
@@ -14,7 +14,10 @@ toc_footers:
   - <a href='https://wiki.openmrs.org/display/docs/OpenMRS+SDK+Step+By+Step+Tutorials'>OpenMRS SDK setup guides</a>
 
 includes:
+  # - errors
   - welcome
+  - restclient
 
 search: true
 ---
+
