@@ -15,8 +15,17 @@ toc_footers:
 
 includes:
   # - errors
-  - welcome
-  - restclient
+  - info
+  - auth
+  - Patient/patients
+  - Visit/visits
+  - Visit/visit_type
+  - Visit/visit_attribute_type
+  - Location/location
+  - Location/location_tag
+  - Location/location_attribute_type
+  - Encounter/encounter
+  
 
 search: true
 ---
