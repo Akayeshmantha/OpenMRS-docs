@@ -18,6 +18,7 @@ includes:
   - info
   - auth
   - Patient/patients
+  - Patient/patient_identifier_type
   - Visit/visits
   - Visit/visit_type
   - Visit/visit_attribute_type
