@@ -16,9 +16,9 @@
 4. [Delete an encounter type](#delete-a-encounters-type)
 
 
-### List encounter types
+## List encounter types
 
-* #### List all  not-retired encounter types.
+* ### List all  not-retired encounter types.
     
     Quickly filter encounter types with given query parameters.Returns a `404 Not Found` status if encounter types not exists. 
     If user not logged in to perform this action,a `401 Unauthorized` status returned.
@@ -34,7 +34,7 @@ GET /encountertype?
     q=Admission
 ```
     
-* #### Get encounter type by UUID.
+* ### Get encounter type by UUID.
 
     Retrieve an encounter type by its UUID. Returns a `404 Not Found` status if encounter type not exists. If user not logged 
     in to perform this action, a `401 Unauthorized` status returned.
@@ -43,7 +43,7 @@ GET /encountertype?
 GET /encountertype/:target_encounter_type_uuid
 ```
    
-### Create an encounter type
+## Create an encounter type
 
 * To Create an encounter type you need to specify below attributes in the request body. If you are not logged in to perform 
 this action, a `401 Unauthorized` status returned.
@@ -62,12 +62,12 @@ POST /encountertype
     "description": "Attach encounters related to hospital dischargers"
 }
 ```
-### Update an encounter type
+## Update an encounter type
 
 *  Update a target encounter type with given UUID, this method only modifies properties in the request. Returns a `404 Not Found` 
 status if encounter type not exists. If user not logged in to perform this action, a `401 Unauthorized` status returned.
     
-    #### Attributes
+    ### Attributes
 
     Parameter | Type | Description
     --- | --- | ---
@@ -82,12 +82,12 @@ POST /encountertype/:target_encounter_type_uuid
 }
 ```
     
-### Delete an encounter type
+## Delete an encounter type
 
 * Delete or retire a target encounter type by its UUID. Returns a `404 Not Found` status if encounter type not exists.If user 
  not logged in to perform this action, a `401 Unauthorized` status returned.
 
-    #### Query Parameters
+    ### Query Parameters
 
     Parameter | Type | Description
     --- | --- | ---

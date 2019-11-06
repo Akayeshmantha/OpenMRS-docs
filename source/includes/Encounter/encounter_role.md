@@ -13,9 +13,9 @@ they don’t have to (e.g., “Lead Surgeon”).
 4. [Delete an encounter role](#delete-a-encounters-role)
 
 
-### List encounter roles
+## List encounter roles
 
-* #### List all non-voided encounter roles.
+* ### List all non-voided encounter roles.
     
     Quickly filter encounter roles with given query parameters.Returns a `404 Not Found` status if encounter roles not exists. 
      If user not logged in to perform this action,a `401 Unauthorized` status returned.
@@ -31,7 +31,7 @@ GET /encounterrole?
     q=Clinician
     ```
     
-* #### Get encounter role by UUID.
+* ### Get encounter role by UUID.
 
     Retrieve an encounter role by its UUID. Returns a `404 Not Found` status if encounter role not exists. If user not logged 
     in to perform this action, a `401 Unauthorized` status returned.
@@ -40,12 +40,12 @@ GET /encounterrole?
 GET /encounter/:target_encounter_role_uuid
 ```
    
-### Create an encounter role
+## Create an encounter role
 
 * To Create an encounter role you need to specify below attributes in the request body. If you are not logged in to perform 
 this action, a `401 Unauthorized` status returned.
 
-    #### Attributes
+    ### Attributes
 
     Parameter | Type | Description
     --- | --- | ---
@@ -59,12 +59,12 @@ POST /encounterrole
     "description": "A provider assisting the Lead Surgeon."
 }
 ```
-### Update an encounter role
+## Update an encounter role
 
 *  Update a target encounter role with given UUID, this method only modifies properties in the request. Returns a `404 Not Found` 
 status if encounter role not exists. If user not logged in to perform this action, a `401 Unauthorized` status returned.
     
-    #### Attributes
+    ### Attributes
 
     Parameter | Type | Description
     --- | --- | ---
@@ -79,12 +79,12 @@ POST /encounterrole/:target_encounter_role_uuid
 }
 ```
     
-### Delete an encounter role
+## Delete an encounter role
 
 * Delete or Void a target encounter role by its UUID. Returns a `404 Not Found` status if encounter role not exists.If user 
  not logged in to perform this action, a `401 Unauthorized` status returned.
 
-    #### Query Parameters
+    ### Query Parameters
 
     Parameter | Type | Description
     --- | --- | ---
