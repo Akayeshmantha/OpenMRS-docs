@@ -25,6 +25,9 @@ includes:
   - Location/location_tag
   - Location/location_attribute_type
   - Encounter/encounter
+  - Encounter/encounter_type
+  - Encounter/encounter_role
+
   
 
 search: true

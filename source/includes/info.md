@@ -1,6 +1,6 @@
 # Current version
 
-* By default, all requests to `/openmrs/ws/rest` receive the v1 version of the REST API aka.
+* By default, all requests to `/openmrs/ws/rest` receive the v1 version of the REST API.
 
 * We have hosted online [swagger documentation](https://demo.openmrs.org/openmrs/module/webservices/rest/apiDocs.htm) that is 
 generated on the fly.
