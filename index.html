@@ -1,0 +1,3673 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>OpenMRS Docs</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;java&quot;,&quot;python&quot;,&quot;node.js&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">shell</a>
+              <a href="#" data-language-name="java">java</a>
+              <a href="#" data-language-name="python">python</a>
+              <a href="#" data-language-name="node.js">node.js</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#current-version" class="toc-h1 toc-link" data-title="Current version">Current version</a>
+          </li>
+          <li>
+            <a href="#resources" class="toc-h1 toc-link" data-title="Resources">Resources</a>
+          </li>
+          <li>
+            <a href="#subresources" class="toc-h1 toc-link" data-title="Subresources">Subresources</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#examples" class="toc-h2 toc-link" data-title="Examples :">Examples :</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#resources-with-subtypes" class="toc-h1 toc-link" data-title="Resources with Subtypes">Resources with Subtypes</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#examples-2" class="toc-h2 toc-link" data-title="Examples :">Examples :</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#retrieve-session-token" class="toc-h2 toc-link" data-title="Retrieve session token">Retrieve session token</a>
+                  </li>
+                  <li>
+                    <a href="#logout-user-end-session" class="toc-h2 toc-link" data-title="Logout User/End session">Logout User/End session</a>
+                  </li>
+                  <li>
+                    <a href="#changing-password" class="toc-h2 toc-link" data-title="Changing Password">Changing Password</a>
+                  </li>
+                  <li>
+                    <a href="#getting-all-location-without-authentication" class="toc-h2 toc-link" data-title="Getting all location without authentication">Getting all location without authentication</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#patients" class="toc-h1 toc-link" data-title="Patients">Patients</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#patients-overview" class="toc-h2 toc-link" data-title="Patients Overview">Patients Overview</a>
+                  </li>
+                  <li>
+                    <a href="#sub-resource-types-of-patient" class="toc-h2 toc-link" data-title="Sub resource types of Patient">Sub resource types of Patient</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-patients" class="toc-h2 toc-link" data-title="Available operations for Patients">Available operations for Patients</a>
+                  </li>
+                  <li>
+                    <a href="#search-patients" class="toc-h2 toc-link" data-title="Search patients">Search patients</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-patient" class="toc-h2 toc-link" data-title="Create a patient">Create a patient</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-patient" class="toc-h2 toc-link" data-title="Update a patient">Update a patient</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-patient" class="toc-h2 toc-link" data-title="Delete a patient">Delete a patient</a>
+                  </li>
+                  <li>
+                    <a href="#list-patientidentifier-sub-resources" class="toc-h2 toc-link" data-title="List patientIdentifier sub resources">List patientIdentifier sub resources</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-patientidentifier-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Create a patientIdentifier sub resource with properties">Create a patientIdentifier sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#update-patientidentifier-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Update patientIdentifier sub resource with properties">Update patientIdentifier sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#delete-patientidentifier-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Delete patientIdentifier sub resource with properties">Delete patientIdentifier sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#list-allergy-sub-resources" class="toc-h2 toc-link" data-title="List allergy sub resources">List allergy sub resources</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-allergy-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Create a allergy sub resource with properties">Create a allergy sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#update-allergy-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Update allergy sub resource with properties">Update allergy sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#delete-allergy-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Delete allergy sub resource with properties">Delete allergy sub resource with properties</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#patientidentifiertype" class="toc-h1 toc-link" data-title="PatientIdentifierType">PatientIdentifierType</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#patientidentifiertype-overview" class="toc-h2 toc-link" data-title="PatientIdentifierType Overview">PatientIdentifierType Overview</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-patientidentifiertype" class="toc-h2 toc-link" data-title="Available operations for PatientIdentifierType">Available operations for PatientIdentifierType</a>
+                  </li>
+                  <li>
+                    <a href="#list-patientidentifiertype-resource" class="toc-h2 toc-link" data-title="List PatientIdentifierType resource">List PatientIdentifierType resource</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-patientidentifiertype" class="toc-h2 toc-link" data-title="Create a patientIdentifierType">Create a patientIdentifierType</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-patientidentifiertype" class="toc-h2 toc-link" data-title="Update a patientIdentifierType">Update a patientIdentifierType</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-patientidentifiertype" class="toc-h2 toc-link" data-title="Delete a patientIdentifierType">Delete a patientIdentifierType</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#visits" class="toc-h1 toc-link" data-title="Visits">Visits</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#visits-overview" class="toc-h2 toc-link" data-title="Visits Overview">Visits Overview</a>
+                  </li>
+                  <li>
+                    <a href="#let-s-look-at-an-example-of-visits" class="toc-h2 toc-link" data-title="Let’s look at an example of Visits">Let’s look at an example of Visits</a>
+                  </li>
+                  <li>
+                    <a href="#visits-sub-resource-types" class="toc-h2 toc-link" data-title="Visits Sub Resource types">Visits Sub Resource types</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-visits" class="toc-h2 toc-link" data-title="Available operations for Visits">Available operations for Visits</a>
+                  </li>
+                  <li>
+                    <a href="#list-visits" class="toc-h2 toc-link" data-title="List visits">List visits</a>
+                  </li>
+                  <li>
+                    <a href="#create-visit" class="toc-h2 toc-link" data-title="Create visit">Create visit</a>
+                  </li>
+                  <li>
+                    <a href="#update-visit" class="toc-h2 toc-link" data-title="Update visit">Update visit</a>
+                  </li>
+                  <li>
+                    <a href="#delete-visit" class="toc-h2 toc-link" data-title="Delete visit">Delete visit</a>
+                  </li>
+                  <li>
+                    <a href="#list-attribute-sub-resources" class="toc-h2 toc-link" data-title="List attribute sub resources">List attribute sub resources</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-attribute-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Create an attribute sub resource with properties">Create an attribute sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#update-attribute-sub-resource" class="toc-h2 toc-link" data-title="Update attribute sub resource">Update attribute sub resource</a>
+                  </li>
+                  <li>
+                    <a href="#delete-attribute-sub-resource" class="toc-h2 toc-link" data-title="Delete attribute sub resource">Delete attribute sub resource</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#visits-type" class="toc-h1 toc-link" data-title="Visits Type">Visits Type</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#visits-type-overview" class="toc-h2 toc-link" data-title="Visits Type Overview">Visits Type Overview</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-visits-type" class="toc-h2 toc-link" data-title="Available operations for Visits Type">Available operations for Visits Type</a>
+                  </li>
+                  <li>
+                    <a href="#list-visits-types" class="toc-h2 toc-link" data-title="List visits types">List visits types</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-visit-type" class="toc-h2 toc-link" data-title="Create a visit type">Create a visit type</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-visit-type" class="toc-h2 toc-link" data-title="Update a visit type">Update a visit type</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-visit-type" class="toc-h2 toc-link" data-title="Delete a visit type">Delete a visit type</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#visits-attribute-type" class="toc-h1 toc-link" data-title="Visits Attribute Type">Visits Attribute Type</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#visits-attribute-type-overview" class="toc-h2 toc-link" data-title="Visits Attribute Type Overview">Visits Attribute Type Overview</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-visits-attribute-type" class="toc-h2 toc-link" data-title="Available operations for Visits Attribute Type">Available operations for Visits Attribute Type</a>
+                  </li>
+                  <li>
+                    <a href="#list-visits-attribute-types" class="toc-h2 toc-link" data-title="List visits attribute types">List visits attribute types</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-visit-attribute-type" class="toc-h2 toc-link" data-title="Create a visit attribute type">Create a visit attribute type</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-visit-attribute-type" class="toc-h2 toc-link" data-title="Update a visit attribute type">Update a visit attribute type</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-visit-attribute-type" class="toc-h2 toc-link" data-title="Delete a visit attribute type">Delete a visit attribute type</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#location" class="toc-h1 toc-link" data-title="Location">Location</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#location-overview" class="toc-h2 toc-link" data-title="Location Overview">Location Overview</a>
+                  </li>
+                  <li>
+                    <a href="#location-sub-resource-types" class="toc-h2 toc-link" data-title="Location Sub Resource types">Location Sub Resource types</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-location" class="toc-h2 toc-link" data-title="Available operations for Location">Available operations for Location</a>
+                  </li>
+                  <li>
+                    <a href="#list-location" class="toc-h2 toc-link" data-title="List location">List location</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-location" class="toc-h2 toc-link" data-title="Create a location">Create a location</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-location" class="toc-h2 toc-link" data-title="Update a location">Update a location</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-location" class="toc-h2 toc-link" data-title="Delete a location">Delete a location</a>
+                  </li>
+                  <li>
+                    <a href="#list-location-attribute-sub-resources" class="toc-h2 toc-link" data-title="List location attribute sub resources">List location attribute sub resources</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-location-attribute-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Create a location attribute sub resource with properties">Create a location attribute sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-location-attribute-sub-resource" class="toc-h2 toc-link" data-title="Update a location attribute sub resource">Update a location attribute sub resource</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-location-attribute-sub-resource" class="toc-h2 toc-link" data-title="Delete a location attribute sub resource">Delete a location attribute sub resource</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#location-tag-type" class="toc-h1 toc-link" data-title="Location Tag Type">Location Tag Type</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#location-tag-overview" class="toc-h2 toc-link" data-title="Location Tag Overview">Location Tag Overview</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-location-tag" class="toc-h2 toc-link" data-title="Available operations for Location Tag">Available operations for Location Tag</a>
+                  </li>
+                  <li>
+                    <a href="#list-location-tags" class="toc-h2 toc-link" data-title="List location tags">List location tags</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-location-tag" class="toc-h2 toc-link" data-title="Create a location tag">Create a location tag</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-location-tag" class="toc-h2 toc-link" data-title="Update a location tag">Update a location tag</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-location-tag" class="toc-h2 toc-link" data-title="Delete a location tag">Delete a location tag</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#location-attribute-type" class="toc-h1 toc-link" data-title="Location Attribute Type">Location Attribute Type</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#location-attribute-overview" class="toc-h2 toc-link" data-title="Location Attribute Overview">Location Attribute Overview</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-location-attribute" class="toc-h2 toc-link" data-title="Available operations for Location Attribute">Available operations for Location Attribute</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-location-attribute-type" class="toc-h2 toc-link" data-title="Create a location attribute type">Create a location attribute type</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-location-attribute-type" class="toc-h2 toc-link" data-title="Update a location attribute type">Update a location attribute type</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-location-attribute-type" class="toc-h2 toc-link" data-title="Delete a location attribute type">Delete a location attribute type</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#encounters" class="toc-h1 toc-link" data-title="Encounters">Encounters</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#encounter-overview" class="toc-h2 toc-link" data-title="Encounter Overview">Encounter Overview</a>
+                  </li>
+                  <li>
+                    <a href="#let-s-look-at-an-example-of-encounter" class="toc-h2 toc-link" data-title="Let’s look at an example of Encounter">Let’s look at an example of Encounter</a>
+                  </li>
+                  <li>
+                    <a href="#sub-resource-types-of-encounter" class="toc-h2 toc-link" data-title="Sub Resource types of Encounter">Sub Resource types of Encounter</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-encounter" class="toc-h2 toc-link" data-title="Available operations for Encounter">Available operations for Encounter</a>
+                  </li>
+                  <li>
+                    <a href="#list-encounters" class="toc-h2 toc-link" data-title="List encounters">List encounters</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-encounter" class="toc-h2 toc-link" data-title="Create an encounter">Create an encounter</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-encounter" class="toc-h2 toc-link" data-title="Update an encounter">Update an encounter</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-encounter" class="toc-h2 toc-link" data-title="Delete an encounter">Delete an encounter</a>
+                  </li>
+                  <li>
+                    <a href="#list-encounter-provider-sub-resources" class="toc-h2 toc-link" data-title="List encounter provider sub resources">List encounter provider sub resources</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-encounter-provider-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Create an encounter provider sub resource with properties">Create an encounter provider sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#update-encounter-provider-sub-resource" class="toc-h2 toc-link" data-title="Update encounter provider sub resource">Update encounter provider sub resource</a>
+                  </li>
+                  <li>
+                    <a href="#delete-encounter-provider-sub-resource" class="toc-h2 toc-link" data-title="Delete encounter provider sub resource">Delete encounter provider sub resource</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#encounter-type" class="toc-h1 toc-link" data-title="Encounter Type">Encounter Type</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#encounter-type-overview" class="toc-h2 toc-link" data-title="Encounter Type Overview">Encounter Type Overview</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-encounter-type" class="toc-h2 toc-link" data-title="Available operations for Encounter Type">Available operations for Encounter Type</a>
+                  </li>
+                  <li>
+                    <a href="#list-encounter-types" class="toc-h2 toc-link" data-title="List encounter types">List encounter types</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-encounter-type" class="toc-h2 toc-link" data-title="Create an encounter type">Create an encounter type</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-encounter-type" class="toc-h2 toc-link" data-title="Update an encounter type">Update an encounter type</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-encounter-type" class="toc-h2 toc-link" data-title="Delete an encounter type">Delete an encounter type</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#encounter-role" class="toc-h1 toc-link" data-title="Encounter Role">Encounter Role</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#encounter-role-overview" class="toc-h2 toc-link" data-title="Encounter Role Overview">Encounter Role Overview</a>
+                  </li>
+                  <li>
+                    <a href="#available-operation-for-encounter-roles" class="toc-h2 toc-link" data-title="Available operation for Encounter Roles">Available operation for Encounter Roles</a>
+                  </li>
+                  <li>
+                    <a href="#list-encounter-roles" class="toc-h2 toc-link" data-title="List encounter roles">List encounter roles</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-encounter-role" class="toc-h2 toc-link" data-title="Create an encounter role">Create an encounter role</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-encounter-role" class="toc-h2 toc-link" data-title="Update an encounter role">Update an encounter role</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-encounter-role" class="toc-h2 toc-link" data-title="Delete an encounter role">Delete an encounter role</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#providers" class="toc-h1 toc-link" data-title="Providers">Providers</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#provider-overview" class="toc-h2 toc-link" data-title="Provider Overview">Provider Overview</a>
+                  </li>
+                  <li>
+                    <a href="#sub-resource-types-of-provider" class="toc-h2 toc-link" data-title="Sub Resource types of Provider">Sub Resource types of Provider</a>
+                  </li>
+                  <li>
+                    <a href="#provider-attribute" class="toc-h2 toc-link" data-title="Provider Attribute.">Provider Attribute.</a>
+                  </li>
+                  <li>
+                    <a href="#available-operations-for-provider" class="toc-h2 toc-link" data-title="Available operations for Provider.">Available operations for Provider.</a>
+                  </li>
+                  <li>
+                    <a href="#list-providers" class="toc-h2 toc-link" data-title="List providers">List providers</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-provider" class="toc-h2 toc-link" data-title="Create a provider">Create a provider</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-provider" class="toc-h2 toc-link" data-title="Update a provider">Update a provider</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-provider" class="toc-h2 toc-link" data-title="Delete a provider">Delete a provider</a>
+                  </li>
+                  <li>
+                    <a href="#list-provider-attribute-sub-resources" class="toc-h2 toc-link" data-title="List provider attribute sub resources">List provider attribute sub resources</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-provider-attribute-sub-resource-with-properties" class="toc-h2 toc-link" data-title="Create a provider attribute sub resource with properties">Create a provider attribute sub resource with properties</a>
+                  </li>
+                  <li>
+                    <a href="#update-provider-attribute-sub-resource" class="toc-h2 toc-link" data-title="Update provider attribute sub resource">Update provider attribute sub resource</a>
+                  </li>
+                  <li>
+                    <a href="#delete-provider-attribute-sub-resource" class="toc-h2 toc-link" data-title="Delete provider attribute sub resource">Delete provider attribute sub resource</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://openmrs.org/'>OpenMRS org</a></li>
+            <li><a href='https://github.com/openmrs'>OpenMRS git-repository</a></li>
+            <li><a href='https://wiki.openmrs.org/'>OpenMRS wiki</a></li>
+            <li><a href='https://wiki.openmrs.org/display/docs/OpenMRS+SDK+Step+By+Step+Tutorials'>OpenMRS SDK setup guides</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='current-version'>Current version</h1>
+<ul>
+<li><p>By default, all requests to <code>/openmrs/ws/rest</code> receive the v1 version of the REST API.</p></li>
+<li><p>We have hosted online <a href="https://demo.openmrs.org/openmrs/module/webservices/rest/apiDocs.htm">swagger documentation</a> that is 
+generated on the fly.</p></li>
+</ul>
+<h1 id='resources'>Resources</h1>
+<ul>
+<li><p>Every available object in the web services (ws) module is written up as a resource. </p></li>
+<li><p>The resource class defines the properties that are exposed and the setters that are available. </p></li>
+<li><p>The class also defines the representations and what goes in them (ref vs default vs full).</p></li>
+</ul>
+
+<p><b>See documentation about resources and their URIs here: <a href="https://wiki.openmrs.org/display/docs/REST+Web+Service+Resources+in+OpenMRS+1.9">REST Web Service Resources in OpenMRS 1.9</a></b></p>
+<h1 id='subresources'>Subresources</h1>
+<ul>
+<li><p>There are some objects that are not defined or do not make sense apart from their parent object which we refer as subresources. </p></li>
+<li><p>Examples are PersonNames, PersonAddresses, ConceptNames, etc. </p></li>
+<li><p>You can act on subresources under the parent url.</p></li>
+</ul>
+<h3 id='examples'>Examples :</h3>
+<p><b> Adding a person name. </b></p>
+<pre class="highlight shell_session"><code>POST /openmrs/ws/rest/v1/person/target_person_uuid/name 
+{
+  "givenName": "John",
+  "familyName": "Smith"
+}
+</code></pre>
+<p><b> Editing a person&#39;s name. </b></p>
+<pre class="highlight shell_session"><code>POST /openmrs/ws/rest/v1/person/target_person_uuid/name/target_name_uuid 
+{
+  "givenName": "Johnny"
+}
+</code></pre>
+<ul>
+<li><p>A subresource can have only one parent. </p></li>
+<li><p>If it seems like an object has two or more parents, then it is most likely a top-level resource. </p></li>
+<li><p>Example &quot;encounters&quot; should not be a subresource of &quot;patient&quot; and &quot;location&quot; resource type (answering questions of &quot;all encounters of a patient&quot; and &quot;all encounters at a location&quot;). </p></li>
+</ul>
+
+<p><b> Instead, these should be queries on the encounter resource: </b> </p>
+<pre class="highlight shell_session"><code>
+ Get encounter list for specific patient.
+
+ GET '/openmrs/ws/rest/v1/encounter?patient=target_patient_uuid'
+
+</code></pre><pre class="highlight shell_session"><code>
+ Get encounter list for specific location.
+
+ GET '/openmrs/ws/rest/v1/encounter?location=target_location_uuid'
+
+</code></pre><h1 id='resources-with-subtypes'>Resources with Subtypes</h1>
+<ul>
+<li><p>Some resources can have multiple subtypes,<b> for example the order resource contains drugorder and testorder subtypes</b></p></li>
+<li><p>When creating a resource that has subtypes via a POST, you must specify which subtype of the resource you are creating, 
+with a special t property of the object.</p></li>
+</ul>
+<h3 id='examples-2'>Examples :</h3><pre class="highlight shell_session"><code>
+POST /openmrs/ws/rest/v1/order
+{"t": "testorder", /*... and other properties */}
+</code></pre>
+<ul>
+<li><p>If you GET a resource that has subtypes, each result will be of one of those subtypes, 
+which you can see by looking at the special t property of each result. </p></li>
+<li><p>You may query for only a certain subtype of a resource by providing a t query parameter. </p></li>
+</ul>
+<pre class="highlight shell_session"><code>
+ Get encounter orders of druge order sub type.
+
+ GET  /openmrs/ws/rest/v1/order?&amp;t=drugorder&amp;v=full'
+</code></pre><h1 id='authentication'>Authentication</h1>
+<ul>
+<li><p>Almost every API endpoint(other than the /session endpoint) in  OpenMRS API requires an authenticated user in order to interact.</p></li>
+<li><p>There is a filter defined on the module that intercepts all calls and authenticates the given request. </p></li>
+<li><p>Currently, only BASIC authentication is supported. Along with the HTTP request, a request header of <b> Authorization: Basic 
+(base64 of username:password) </b> needs to be sent.</p></li>
+</ul>
+
+<p><b>Alternatively, a session token can be used to interact with the API endpoints.</b></p>
+<h2 id='retrieve-session-token'>Retrieve session token</h2><pre class="highlight shell_session"><code>GET /openmrs/ws/rest/v1/session 
+-H 'Authorization: Basic Auth' (required to indetify the user)
+</code></pre>
+<p>This token should be passed with all subsequent calls as a cookie named <b>jsessionid=token</b>.</p>
+<h2 id='logout-user-end-session'>Logout User/End session</h2><pre class="highlight shell_session"><code>DELETE /openmrs/ws/rest/v1/session -H 'Accept: application/json'
+-H 'Authorization: Basic Auth' (required to indetify the user)
+</code></pre><h2 id='changing-password'>Changing Password</h2>
+<p><b>Since version 2.17 of the webservices.rest module:</b></p>
+
+<ul>
+<li>An administrator (with the EDIT_USER_PASSWORDS privilege) can change the password for other users.</li>
+</ul>
+<pre class="highlight shell_session"><code>POST /openmrs/ws/rest/v1/password/target_user-UUID 
+{
+  "oldPassword" : "oldPassword",
+  "newPassword" : "newPassword"
+}
+</code></pre>
+<ul>
+<li>After authenticating user can change their own password, by</li>
+</ul>
+<pre class="highlight shell_session"><code>POST /openmrs/ws/rest/v1/password 
+{
+  "oldPassword" : "oldPassword",
+  "newPassword" : "newPassword"
+}
+</code></pre><h2 id='getting-all-location-without-authentication'>Getting all location without authentication</h2>
+<p>Fetching locations requires you to <b> authenticate the user first </b>.If it is required to display all locations prior to login 
+or without authentication you can do it by </p>
+<pre class="highlight shell_session"><code>GET /openmrs/ws/rest/v1/location?tag=Login%25Location' 
+</code></pre><h1 id='patients'>Patients</h1><h2 id='patients-overview'>Patients Overview</h2>
+<ul>
+<li><p>Anyone who receives care in OpenMRS must be a <strong>Patient</strong>.</p></li>
+<li><p>Every Patient must have atleast one Identifier, which is explained below. (for example,
+Anyone who has an Encounter or who is enrolled in a Program is a Patient.)</p></li>
+<li><p>A Patient is also a Person, meaning they must have at least one name and they may have addresses.</p></li>
+</ul>
+<h2 id='sub-resource-types-of-patient'>Sub resource types of Patient</h2><h3 id='patientidentifier-identifier'>PatientIdentifier (Identifier)</h3>
+<ul>
+<li>A PatientIdentifier is a medical record number assigned by your facility, used to identify and re-identify the patient on subsequent visits.</li>
+</ul>
+<h3 id='allergy'>Allergy</h3>
+<ul>
+<li>OpenMRS lets you manually maintain an <strong>Allergy List</strong> for a patient, including the allergen, reaction, severity, etc.</li>
+</ul>
+<h2 id='available-operations-for-patients'>Available operations for Patients</h2>
+<ol>
+<li> <a href="#search-patients">List Patients</a></li>
+<li> <a href="#create-a-patient">Create a patient record</a></li>
+<li> <a href="#update-a-patient">Update a patient record</a></li>
+<li> <a href="#delete-a-patient">Delete a patient record</a></li>
+<li> <a href="#list-patientIdentifier-sub-resources">List patientIdentifier sub resource</a></li>
+<li> <a href="#create-a-patientIdentifier-sub-resource-with-properties">Create patientIdentifier sub resource with properties</a></li>
+<li> <a href="#update-patientidentifier-sub-resource-with-properties">Update patientIdentifier sub resource</a></li>
+<li> <a href="#delete-patientidentifier-sub-resource-with-properties">Delete patientIdentifier sub resource</a></li>
+<li> <a href="#list-allergy-sub-resources">List allergy sub resource</a></li>
+<li><a href="#">Create allergy sub resource with properties</a></li>
+<li><a href="#update-allergy-sub-resource-with-properties">Update allergy sub resource</a></li>
+<li><a href="#delete-allergy-sub-resource-with-properties">Delete allergy sub resource</a></li>
+</ol>
+<h2 id='search-patients'>Search patients</h2>
+<ul>
+<li><h3 id='search-patients-2'>Search patients</h3>
+<p>Fetch all non-retired patients that match any specified parameters otherwise fetch all non-retired patients. Returns a <code>200 OK</code> status with the patient response. </p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>matchSimilar</td>
+<td>use this parameter to enter anything to match</td>
+</tr>
+<tr>
+<td>country</td>
+<td>Country where the patient is registered</td>
+</tr>
+<tr>
+<td>birthDate</td>
+<td>must be used with matchSimilar</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>Gender of the patient</td>
+</tr>
+<tr>
+<td>city</td>
+<td>City where the patient is registered</td>
+</tr>
+<tr>
+<td>address</td>
+<td>Address of the patients</td>
+</tr>
+<tr>
+<td>familyName</td>
+<td>must be used with matchSimilar</td>
+</tr>
+<tr>
+<td>middleName</td>
+<td>must be used with matchSimilar</td>
+</tr>
+<tr>
+<td>postalCode</td>
+<td>must be used with matchSimilar</td>
+</tr>
+<tr>
+<td>givenname</td>
+<td>must be used with matchSimilar</td>
+</tr>
+<tr>
+<td>state</td>
+<td>must be used with matchSimilar</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /patient?
+country=india
+&amp;gender=M
+</code></pre>
+<ul>
+<li><h3 id='list-patient-by-uuid'>List patient by UUID.</h3>
+<p>Retrieve a patient by its UUID. Returns a <code>404 Not Found</code> status if patient does not exist in the system. If the user is not logged in to perform this action, a <code>401 Unauthorized</code> status is returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /patient/:target_patient_uuid
+</code></pre><h2 id='create-a-patient'>Create a patient</h2>
+<ul>
+<li><p>To create a patient you need to specify the below properties in the request. If you are not logged in to perform this action, a <code>401 Unauthorized</code> status is returned.</p>
+<h3 id='properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>person</em></td>
+<td><code>PERSON_UUID</code></td>
+<td>Person resource UUID</td>
+</tr>
+<tr>
+<td><em>identifiers</em></td>
+<td><code>Array[]: Identifiers</code></td>
+<td>List of patientIdentifiers</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /patient
+{
+    "person": "uuid",
+    "identifiers": [
+    {
+        "identifier": "string",
+        "identifierType": "uuid",
+        "location": "uuid",
+        "preferred": true
+    }
+    ]
+}
+</code></pre><h2 id='update-a-patient'>Update a patient</h2>
+<ul>
+<li><p>Update a target patient with given UUID, this method only modifies properties in the request. 
+Returns a <code>404 Not Found</code> status if patient not exists. If user not logged in to perform this action, a <code>401 Unauthorized status returned</code>.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>uuid</em></td>
+<td><code>target_patient_uuid</code></td>
+<td>Target patient resource UUID</td>
+</tr>
+</tbody></table>
+<h3 id='properties-2'>Properties</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>resource</em></td>
+<td><code>Patient</code></td>
+<td>Patient resource with updated properties</td>
+</tr>
+</tbody></table>
+<pre class="highlight shell_session"><code>POST /patient/:target_patient_uuid
+-d modified_patient_object
+</code></pre></li>
+</ul>
+<h2 id='delete-a-patient'>Delete a patient</h2>
+<ul>
+<li><p>Delete or retire a target patient by its UUID. Returns a <code>404 Not Found</code> status if patient not exists. If user is not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>uuid</strong></td>
+<td><code>String</code></td>
+<td>uuid to delete</td>
+</tr>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = &#39;true&#39;</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /patient/:target_patient_uuid?purge=true
+</code></pre><h2 id='list-patientidentifier-sub-resources'>List patientIdentifier sub resources</h2>
+<ul>
+<li><h3 id='list-all-patientidentifier-sub-resources-for-a-patient'>List all patientIdentifier sub resources for a patient.</h3>
+<p>Retrieve all <b>identifier</b> sub resources of a <b>patient</b> resource by <code>target_patient_uuid</code>.Returns a <code>404 Not Found</code> status if patientIdentifier not exists. If user not logged in to perform this action, a <code>401 unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /patient/:target_patient_uuid/identifier
+</code></pre>
+<ul>
+<li><h3 id='list-patientidentifier-sub-resource-by-it-39-s-uuid-and-parent-patient-uuid'>List patientIdentifier sub resource by it&#39;s UUID and parent patient UUID.</h3>
+<p>Retrieve a <b>patientIdentifier</b> sub resources of a <b>patient</b> resource. Returns a <code>404 Not Found</code> status if patientIdentifier not exists. If you are not logged in to perform this action, a <code>401 Unauthorized</code> status returned. </p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /patient/:target_patient_uuid/identifier/:target_identifier_uuid
+</code></pre><h2 id='create-a-patientidentifier-sub-resource-with-properties'>Create a patientIdentifier sub resource with properties</h2>
+<ul>
+<li><p>To create a patientIdentifier sub resource for a specific patient resource you need to specifyn below properties in your request body.
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameter'>Query parameter</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<p><code>target_patient_uuid</code> : patient resource uuid</p>
+<h3 id='properties-for-resource'>Properties for resource</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>identifier</em></td>
+<td><code>String</code></td>
+<td>value of the identifier</td>
+</tr>
+<tr>
+<td><em>identifierType</em></td>
+<td><code>Identifier_Type_UUID</code></td>
+<td>Create identifier from this Identifier_type</td>
+</tr>
+<tr>
+<td><em>location</em></td>
+<td><code>Location UUID</code></td>
+<td>Get patients for this location</td>
+</tr>
+<tr>
+<td><em>preferred</em></td>
+<td><code>boolean</code></td>
+<td>preferred/not preferred identifier</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST patient/:target_patient_uuid/identifier
+{ 
+    "identifier" : "string",
+    "identifierType" : "target_identifer_uuid",
+    "location" : "target_location_uuid",
+    "preferred" : true/false
+}
+</code></pre><h2 id='update-patientidentifier-sub-resource-with-properties'>Update patientIdentifier sub resource with properties</h2>
+<ul>
+<li><p>Updates an patientIdentifier sub resource value with given uuid, this method will only modify value of the sub resource. Returns a <code>404 Not Found</code> status if attribute not exists.If user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p>
+<h3 id='properties-3'>Properties</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>identifier</em></td>
+<td><code>String</code></td>
+<td>updated value of the identifier</td>
+</tr>
+<tr>
+<td><em>identifierType</em></td>
+<td><code>Identifier_Type_UUID</code></td>
+<td>Create identifier from this Identifier_type</td>
+</tr>
+<tr>
+<td><em>location</em></td>
+<td><code>Location UUID</code></td>
+<td>updated location</td>
+</tr>
+<tr>
+<td><em>preferred</em></td>
+<td><code>boolean</code></td>
+<td>updated status of preferred/not preferred identifier</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST patient/:target_patient_uuid/identifier/:target_identifier_uuid
+{ 
+"identifier" : "string",
+"identifierType" : "target_identifer_uuid",
+"location" : "target_location_uuid",
+"preferred" : true/false
+}
+</code></pre><h2 id='delete-patientidentifier-sub-resource-with-properties'>Delete patientIdentifier sub resource with properties</h2>
+<ul>
+<li><p>Delete or retire a target identifier sub resource by its UUID.Returns a <code>404 Not Found</code> status if attribute not exists. 
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-4'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /patient/:target_patient_uuid/identifier/:target_identifier_uuid
+</code></pre><h2 id='list-allergy-sub-resources'>List allergy sub resources</h2>
+<ul>
+<li><p>List allergy sub resource by it&#39;s UUID and parent patient UUID.</p>
+
+<p>Retrieve a <b>allergy</b> sub resources of a <b>patient</b> resource. Returns a <code>404 Not Found</code> status if allergy not exists. If you are not logged in to perform this action, a <code>401 Unauthorized</code> status returned. </p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /patient/:target_patient_uuid/allergy/:target_allergy_uuid
+</code></pre><h2 id='create-a-allergy-sub-resource-with-properties'>Create a allergy sub resource with properties</h2>
+<ul>
+<li><p>To create a allergy sub resource for a specific patient resource you need to specify below properties in your request body.
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameter-2'>Query parameter</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<p><code>target_patient_uuid</code> : patient resource uuid</p>
+<h3 id='properties-for-resource-2'>Properties for resource</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>allergen</em></td>
+<td><code>String</code></td>
+<td>value of the allergen</td>
+</tr>
+<tr>
+<td><em>severity</em></td>
+<td><code>Severity_UUID</code></td>
+<td>Severity uuid</td>
+</tr>
+<tr>
+<td><em>comment</em></td>
+<td><code>String</code></td>
+<td>comment for the allergy</td>
+</tr>
+<tr>
+<td><em>allergy</em></td>
+<td><code>allergy_UUID</code></td>
+<td>allergy uuid</td>
+</tr>
+<tr>
+<td><em>reaction</em></td>
+<td><code>reaction_UUID</code></td>
+<td>reaction uuid</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST patient/:target_patient_uuid/allergy
+{
+    "allergen": {},
+    "severity": {
+        "uuid": "string"
+    },
+    "comment": "string",
+    "reactions": [
+        {
+            "allergy": {
+            "uuid": "string"
+        },
+        "reaction": {
+            "uuid": "string"
+        }
+    }
+]
+}
+</code></pre><h2 id='update-allergy-sub-resource-with-properties'>Update allergy sub resource with properties</h2>
+<ul>
+<li><p>Updates an allergy sub resource value with given uuid, this method will only modify value of the sub resource. Returns a <code>404 Not Found</code> status if property not exists.If user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p>
+<h3 id='query-parameter-3'>Query parameter</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<p><code>target_patient_uuid</code> : patient resource uuid
+<code>target_allergy_uuid</code> : allergy resource uuid</p>
+<h3 id='properties-for-resource-3'>Properties for resource</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>allergen</em></td>
+<td><code>String</code></td>
+<td>value of the allergen</td>
+</tr>
+<tr>
+<td><em>severity</em></td>
+<td><code>Severity_UUID</code></td>
+<td>Severity uuid</td>
+</tr>
+<tr>
+<td><em>comment</em></td>
+<td><code>String</code></td>
+<td>comment for the allergy</td>
+</tr>
+<tr>
+<td><em>allergy</em></td>
+<td><code>allergy_UUID</code></td>
+<td>allergy uuid</td>
+</tr>
+<tr>
+<td><em>reaction</em></td>
+<td><code>reaction_UUID</code></td>
+<td>reaction uuid</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST patient/:target_patient_uuid/allergy/:target_allergy_uuid
+{
+"allergen": {},
+"severity": {
+    "uuid": "string"
+},
+"comment": "string",
+"reactions": [
+    {
+        "allergy": {
+        "uuid": "string"
+    },
+    "reaction": {
+        "uuid": "string"
+    }
+}
+]
+}
+</code></pre><h2 id='delete-allergy-sub-resource-with-properties'>Delete allergy sub resource with properties</h2>
+<ul>
+<li><p>Delete or retire a target allergy sub resource by its UUID.Returns a <code>404 Not Found</code> status if attribute not exists. 
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-5'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /patient/:target_patient_uuid/allergy/:target_allergy_uuid
+</code></pre><h1 id='patientidentifiertype'>PatientIdentifierType</h1><h2 id='patientidentifiertype-overview'>PatientIdentifierType Overview</h2>
+<p>Administrators define what types of identifiers they will collect. These range from National ID numbers, to driver&#39;s license numbers, to per-hospital medical record numbers.</p>
+<h3 id='properties-on-patientidentifiertype'>Properties on PatientIdentifierType:</h3>
+<ul>
+<li><p>format: a regular expression defining what the identifier text should contain</p></li>
+<li><p>formatDescription: An optional description of the regular expression (used to explain the requirements of the regular expression in terms a user would understand). For example, a regular expression like <code>\d{4,8}</code> could have a description like &quot;Must be a number between 4 and 8 digits in length.&quot;</p></li>
+<li><p>required: a true/false whether every patient MUST have this type</p></li>
+<li><p>checkDigit: a true/false whether this identifier has a checkdigit at the end</p></li>
+<li><p>validator: full class name of an <a href="https://docs.openmrs.org/doc/org/openmrs/patient/IdentifierValidator.html">IdentifierValidator</a> (e.g., <a href="https://docs.openmrs.org/doc/org/openmrs/patient/impl/LuhnIdentifierValidator.html"><code>org.openmrs.patient.impl.LuhnIdentifierValidator</code></a>)</p></li>
+<li><p>locationBehavior: &quot;REQUIRED&quot; if a location must be associated with the identifier; &quot;NOT_USED&quot; if the identifier does require a location</p></li>
+</ul>
+<h2 id='available-operations-for-patientidentifiertype'>Available operations for PatientIdentifierType</h2>
+<ol>
+<li><a href="#List-patientidentifierType-resource">List PatientIdentifierType resources</a></li>
+<li><a href="#create-a-patientidentifierType">Create a patientIdentifierType record</a></li>
+<li><a href="#update-a-patientIdentifierType">Update a patientIdentifierType record</a></li>
+<li><a href="#delete-a-patientIdentifierType">Delete a patientIdentifierType record</a></li>
+</ol>
+<h2 id='list-patientidentifiertype-resource'>List PatientIdentifierType resource</h2>
+<ul>
+<li><h3 id='list-patientidentifiertype'>List patientIdentifierType</h3>
+<p>Fetch all non-retired patientIdentifierTypes resources that match any specified parameters otherwise fetch all non-retired patients. Returns a <code>200 OK</code> status with the patientIdentifierType response. If the user is not logged in it returns <code>401 Unauthorized</code> status is returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /patientidentifiertype
+</code></pre>
+<ul>
+<li><h3 id='get-patientidentifiertype-by-uuid'>Get patientIdentifierType by UUID.</h3>
+<p>Retrieve a patientIdentifierType by its UUID. Returns a <code>404 Not Found</code> status if patientIdentifierType does not exist in the system. If the user is not logged in to perform this action, a <code>401 Unauthorized</code> status is returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /patientidentifiertype/:target_patientIdentifierType_uuid
+</code></pre><h2 id='create-a-patientidentifiertype'>Create a patientIdentifierType</h2>
+<ul>
+<li><p>To create a patientIdentifierType you need to specify the below properties in the request. If you are not logged in to perform this action, a <code>401 Unauthorized</code> status is returned.</p>
+<h3 id='properties'>Properties</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td>string</td>
+<td>label for the identifier</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td>string</td>
+<td>a small description about the patientIdentifier</td>
+</tr>
+<tr>
+<td><em>format</em></td>
+<td>string</td>
+<td>a regular expression defining what the identifier text should contain</td>
+</tr>
+<tr>
+<td><em>formatDescription</em></td>
+<td>string</td>
+<td>an optional description of the regular expression</td>
+</tr>
+<tr>
+<td><em>required</em></td>
+<td>boolean</td>
+<td>a true/false whether every patient MUST have this type</td>
+</tr>
+<tr>
+<td><em>checkDigit</em></td>
+<td>boolean</td>
+<td>a true/false whether this identifier has a checkdigit at the end</td>
+</tr>
+<tr>
+<td><em>validator</em></td>
+<td>string</td>
+<td><code>org.openmrs.patient.IdentifierValidator</code></td>
+</tr>
+<tr>
+<td><em>locationBehavior</em></td>
+<td>&quot;REQUIRED&quot; or &quot;NOT USED&quot;</td>
+<td>behavior of the location with respect to the identifier</td>
+</tr>
+<tr>
+<td><em>uniquenessBehavior</em></td>
+<td>string</td>
+<td>specify the uniqueness of the behaviour, it can be either Unique, Non Unique or Location.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /patientidentifiertype
+{
+    "name": "Wilson Hosp MRN",
+    "description": "Wilson Hospital Medical Record Number",
+    "format": "\d{1,10}-\d",
+    "formatDescription": "Up to ten digts followed by a hyphen and another digit",
+    "required": true,
+    "validator": "org.openmrs.patient.impl.LuhnIdentifierValidator",
+    "checkDigit": true,
+    "locationBehavior": "REQUIRED",
+    "uniquenessBehavior": "Unique"
+}
+</code></pre><h2 id='update-a-patientidentifiertype'>Update a patientIdentifierType</h2>
+<ul>
+<li><p>Update a target patientIdentifierType with given UUID, this method only modifies properties in the request. 
+Returns a <code>404 Not Found</code> status if patientIdentifierType not exists. If user not logged in to perform this action, a <code>401 Unauthorized status returned</code>.</p>
+<pre class="highlight shell_session"><code>POST /patientidentifertype/:target_patientidentifiertype_uuid
+{
+"name": "Amani Identifier",
+"description": "Medical record number for Amani Health System",
+"format": "\\d{1,10}-\\d",
+"formatDescription": "Up to ten digts followed by a hyphen and another digit",
+"required": false,
+"validator": "org.openmrs.patient.impl.LuhnIdentifierValidator",
+"locationBehavior": "NOT_USED",
+"uniquenessBehavior": "UNIQUE"
+}
+</code></pre></li>
+</ul>
+<h2 id='delete-a-patientidentifiertype'>Delete a patientIdentifierType</h2>
+<ul>
+<li><p>Delete or retire a target patientIdentifierType by its UUID. Returns a <code>404 Not Found</code> status if patientIdentifierType not exists. If user is not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be retired unless purge = &#39;true&#39;</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /patientidentifiertype/:target_patientidentifiertype_uuid?purge=true
+</code></pre><h1 id='visits'>Visits</h1><h2 id='visits-overview'>Visits Overview</h2>
+<ul>
+<li><p>A Visit in OpenMRS represents precisely what it sounds like: a time when a patient is actively interacting with the 
+the healthcare system, typically at a location.</p></li>
+<li><p>The metadata differentiating different types of visits is a Visit Type. Visit Types displayed in the user interface, 
+also, can be searched against.</p></li>
+<li><p>A visit contains encounters, which store more granular data about treatments or services.</p></li>
+</ul>
+<h2 id='let-s-look-at-an-example-of-visits'>Let’s look at an example of Visits</h2>
+<p>At the Amani Clinic, a patient might typically check-in at registration, be seen by a doctor, and receives medication 
+<b> dispensed </b> in the pharmacy. This would be recorded as one <b> visit </b> of <b> visit type of Outpatient </b>, and 
+contain <b> three encounters (Registration, Consultation, and Dispensing) </b>.</p>
+<h2 id='visits-sub-resource-types'>Visits Sub Resource types</h2><h3 id='visits-attribute'>Visits Attribute</h3>
+<ul>
+<li><p>If you wish to record extra information about visits, you can create Visit Attributes and assign them to Visit Types.</p></li>
+<li><p>Visit attributes exists specifically to allow implementations to extend the data model.</p></li>
+</ul>
+<h2 id='available-operations-for-visits'>Available operations for Visits</h2>
+<ol>
+<li><a href="#list-visits">List visits</a></li>
+<li><a href="#create-a-visit">Create a visit</a></li>
+<li><a href="#update-a-visit">Update a visit</a></li>
+<li><a href="#delete-a-visit">Delete a visit</a></li>
+<li><a href="#list-attribute-sub-resources">List attribute sub resource</a></li>
+<li><a href="#create-an-attribute-sub-resource-with-properties">Create attribute sub resource with properties</a></li>
+<li><a href="#update-attribute-sub-resource">Update attribute sub resource</a></li>
+<li><a href="#delete-attribute-sub-resource">Delete attribute sub resource</a></li>
+</ol>
+<h2 id='list-visits'>List visits</h2>
+<ul>
+<li><h3 id='list-all-non-retired-visits'>List all non-retired visits.</h3>
+<p>Quickly filter visits with given query parameters.Returns a <code>404 Not Found</code> status if visit not exists. If user not logged 
+in to perform this action,a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>patient</em></td>
+<td><code>Patient UUID</code></td>
+<td>Get visits for this patient</td>
+</tr>
+<tr>
+<td><em>location</em></td>
+<td><code>Location UUID</code></td>
+<td>Get visits for this location</td>
+</tr>
+<tr>
+<td><em>includeInactive</em></td>
+<td><code>Boolean</code></td>
+<td>Active/Inactive status of visit</td>
+</tr>
+<tr>
+<td><em>fromStartDate</em></td>
+<td><code>Date (ISO8601 Long)</code></td>
+<td>Start date of the visit</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /visit?
+includeInactive=true
+&amp;fromStartDate=2016-10-08T04:09:23.000Z
+&amp;patient=target_patient_uuid
+&amp;location=target_location_uuid
+</code></pre>
+<ul>
+<li><h3 id='list-visit-by-uuid'>List visit by UUID.</h3>
+<p>Retrieve a visit by its UUID. Returns a <code>404 Not Found</code> status if visit not exists. If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /visit/:target_visit_uuid
+</code></pre><h2 id='create-visit'>Create visit</h2>
+<ul>
+<li><p>To Create a visit you need to specify below attributes in the request body.If you are not logged in to perform this action,
+a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>patient</em></td>
+<td><code>Patient UUID</code></td>
+<td>Patient resource UUID</td>
+</tr>
+<tr>
+<td><em>visitType</em></td>
+<td><code>Patient UUID</code></td>
+<td>Visit type resource UUID</td>
+</tr>
+<tr>
+<td><em>startDatetime</em></td>
+<td><code>Date (ISO8601 Long)</code></td>
+<td>Start date of the visit</td>
+</tr>
+<tr>
+<td><em>location</em></td>
+<td><code>Location UUID</code></td>
+<td>Location resource UUID</td>
+</tr>
+<tr>
+<td><em>indication</em></td>
+<td><code>string</code></td>
+<td>Any indication of the visit</td>
+</tr>
+<tr>
+<td><em>stopDatetime</em></td>
+<td><code>Date (ISO8601 Long)</code></td>
+<td>End date of the vist</td>
+</tr>
+<tr>
+<td><em>encounters</em></td>
+<td><code>Array[]: Encounter UUID</code></td>
+<td>Encounter resources UUID</td>
+</tr>
+<tr>
+<td><em>attributes</em></td>
+<td><code>Array[]: Attribute</code></td>
+<td>List of visit attributes</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /visit
+{
+    "patient": "target_patient_uuid",
+    "visitType": "target_visitType_uuid",
+    "startDatetime": "2016-10-08T04:09:25.000Z",
+    "location": "target_location_uuid",
+    "indication": null,
+    "encounters": [
+    "target_encounter_uuid"
+    ],
+    "attributes": [
+    {
+        "attributeType": "target_attributeType_uuid",
+        "value": "value_for_attribute"
+    }
+    ]
+}
+</code></pre><h2 id='update-visit'>Update visit</h2>
+<ul>
+<li><p>Update a target visit with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if visit not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>uuid</em></td>
+<td><code>target_visit_uuid</code></td>
+<td>Target visit resource UUID</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>resource</em></td>
+<td><code>Visit</code></td>
+<td>Visit resource with updated properties.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /visit/:target_visit_uuid
+-d  modified_visit_object
+</code></pre><h2 id='delete-visit'>Delete visit</h2>
+<ul>
+<li><p>Delete or Retire a target visit by its UUID. Returns a <code>404 Not Found</code> status if visit not exists.If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /visit/:target_visit_uuid?purge=true
+</code></pre><h2 id='list-attribute-sub-resources'>List attribute sub resources</h2>
+<ul>
+<li><h3 id='list-all-attribute-sub-resources-for-a-visit'>List all attribute sub resources for a visit.</h3>
+<p>Retrieve all <b>attribute</b> sub resources of a  <b>visit</b> resource by target_visit_uuid.Returns a 
+<code>404 Not Found</code> status if attribute not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /visit/:target_visit_uuid/attribute 
+</code></pre>
+<ul>
+<li><h3 id='list-attribute-sub-resources-by-it-39-s-uuid-and-parent-visit-uuid'>List attribute sub resources by it&#39;s UUID and parent visit UUID.</h3>
+<p>Retrieve an <b>attribute</b> sub resources of a <b>visit</b> resource.Returns a 
+ <code>404 Not Found</code> status if attribute not exists. If you are not logged in to perform this action, a <code>401 Unauthorized</code> status
+ returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /visit/:target_visit_uuid/attribute/:target_attribute_uuid
+</code></pre><h2 id='create-an-attribute-sub-resource-with-properties'>Create an attribute sub resource with properties</h2>
+<ul>
+<li><p>To Create an attribute sub resource for a specific visit resource you need to specify below attributes in the request body.
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes-3'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>attributeType</em></td>
+<td><code>Attribute_Type UUID</code></td>
+<td>Create Attribute from this Attribute_Type</td>
+</tr>
+<tr>
+<td><em>value</em></td>
+<td><code>Depends on Attribute_Type Selected</code></td>
+<td>Value for the attribute</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST visit/:target_visit_uuid/attribute 
+{
+    "attributeType": "target_attribute_type_uuid",
+    "value": "value_for_the_attriute"
+}
+</code></pre><h2 id='update-attribute-sub-resource'>Update attribute sub resource</h2>
+<ul>
+<li><p>Updates an attribute sub resource value with given uuid, this method will only modify value of the sub resource.Returns 
+a <code>404 Not Found</code> status if attribute not exists.If user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p>
+<h3 id='attributes-4'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>attributeType</em></td>
+<td><code>Attribute_Type UUID</code></td>
+<td>Attribute_Type resource UUID</td>
+</tr>
+<tr>
+<td><em>updated value</em></td>
+<td><code>Depends on Attribute_Type Selected</code></td>
+<td>Updated value for the attribute</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST visit/:target_visit_uuid/attribute/:target_attribute_uuid
+{
+    "attributeType": "target_attribute_type_uuid",
+    "value": "modified_attriute_value"
+} 
+</code></pre><h2 id='delete-attribute-sub-resource'>Delete attribute sub resource</h2>
+<ul>
+<li><p>Delete or Retire a target attribute sub resource by its UUID.Returns a <code>404 Not Found</code> status if attribute not exists. 
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-4'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /visit/:target_visit_uuid/attribute/:target_attribute_uuid
+</code></pre><h1 id='visits-type'>Visits Type</h1><h2 id='visits-type-overview'>Visits Type Overview</h2>
+<ul>
+<li><p>A Visit Type is a name and description of a kind of visit. </p></li>
+<li><p>Every visit has a type. You should create visit types that match how your health site classifies visits, such as 
+&quot;Outpatient,&quot; &quot;Hospitalization,&quot; &quot;Dental,&quot; &quot;Patient Education,&quot; or &quot;TB Clinic.&quot;.</p></li>
+<li><p>It is mandatory to set up at least one visit type.</p></li>
+<li><p>Visit types will be shown as dropdown options when creating or editing a patient in Registration. </p></li>
+<li><p>Visit types can be added via the OpenMRS admin screen(Administration &gt; Visits &gt; Manage Visit Types) or via sql scripts. </p></li>
+</ul>
+<h2 id='available-operations-for-visits-type'>Available operations for Visits Type</h2>
+<ol>
+<li><a href="#list-visits-types">List visits types</a></li>
+<li><a href="#create-a-visit-type">Create a visit type</a></li>
+<li><a href="#update-a-visit-type">Update a visit type</a></li>
+<li><a href="#delete-a-visit-type">Delete a visit type</a></li>
+</ol>
+<h2 id='list-visits-types'>List visits types</h2>
+<ul>
+<li><h3 id='list-all-non-retired-visits-types'>List all non-retired visits types.</h3>
+<p>Quickly filter visit types with a given search query.Returns a <code>404 Not Found</code> status if visit type not exists. 
+If user not logged in to perform this action,a <code>401 Unauthorized</code> status returned.</p>
+<h5 id='query-parameters'>Query Parameters</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Display Name of Visit Type.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /visittype?q="Search Query"
+</code></pre>
+<ul>
+<li><h3 id='list-visit-type-by-uuid'>List visit type by UUID.</h3>
+<p>Retrieve a visit type by its UUID. Returns a <code>404 Not Found</code> status if visit type not exists. If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /visittype/:target_visit_type_uuid
+</code></pre><h2 id='create-a-visit-type'>Create a visit type</h2>
+<ul>
+<li><p>To Create a visit type you need to specify below attributes in the request body.If you are not logged in to perform this action,
+a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the visit type (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>Patient UUID</code></td>
+<td>Visit type resource UUID (Required)</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /visittype
+{
+    "name": "Name for the visit type",
+    "description": "Description for the visit type"
+}
+</code></pre><h2 id='update-a-visit-type'>Update a visit type</h2>
+<ul>
+<li><p>Update a target visit type with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if visit not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>uuid</em></td>
+<td><code>target_visit_type_uuid</code></td>
+<td>Target visit type resource UUID</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the visit type (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>Patient UUID</code></td>
+<td>Visit type resource UUID (Required)</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /type/:target_visit_type_uuid
+{
+    "name": "Modified name for the visit type",
+    "description": "Modified description for the visit type"
+}
+</code></pre><h2 id='delete-a-visit-type'>Delete a visit type</h2>
+<ul>
+<li><p>Delete or Retire a target visit type by its UUID. Returns a <code>404 Not Found</code> status if visit not exists.If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /visittype/:target_visit_type_uuid?purge=true
+</code></pre><h1 id='visits-attribute-type'>Visits Attribute Type</h1><h2 id='visits-attribute-type-overview'>Visits Attribute Type Overview</h2>
+<ul>
+<li><p>If you wish to record extra information about visits, you can create Visit Attributes and assign them to Visit Types. </p></li>
+<li><p>For example, you might create attributes for &quot;Followup Visit,&quot; or &quot;Distance Patient Traveled.&quot;</p></li>
+</ul>
+<h2 id='available-operations-for-visits-attribute-type'>Available operations for Visits Attribute Type</h2>
+<ol>
+<li><a href="#list-visits-attribute-types">List visits attribute types</a></li>
+<li><a href="#create-a-visit-attribute-type">Create a visit attribute type</a></li>
+<li><a href="#update-a-visit-attribute-type">Update a visit attribute type</a></li>
+<li><a href="#delete-a-visit-attribute-type">Delete a visit attribute type</a></li>
+</ol>
+<h2 id='list-visits-attribute-types'>List visits attribute types</h2>
+<ul>
+<li><h3 id='list-all-non-retired-visits-attribute-types'>List all non-retired visits attribute types.</h3>
+<p>Quickly filter visit attribute types with a given search query. Returns a <code>404 Not Found</code> status if the visit attribute type not exists.
+ If the user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Display Name of Visit attribute type.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /visitattributetype?q="Search Query"
+</code></pre>
+<ul>
+<li><h3 id='list-visit-attribute-type-by-uuid'>List visit attribute type by UUID.</h3>
+<p>Retrieve a visit attribute type by its UUID. Returns a <code>404 Not Found</code> status if the visit attribute type not exists. If the 
+user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /visitattributetype/:target_visit_attribute_type_uuid
+</code></pre><h2 id='create-a-visit-attribute-type'>Create a visit attribute type</h2>
+<ul>
+<li><p>To Create a visit attribute type you need to specify below attributes in the request body.If the user not logged in to perform this action,
+a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the visit attribute type (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description (Required)</td>
+</tr>
+<tr>
+<td><em>datatypeClassname</em></td>
+<td><code>CustomDataType Resource</code></td>
+<td>Data type for the attribute type resource.OpenMRS provides <strong>Custom data type resource</strong> which gives flexibility to select the data type accordingly (Required)</td>
+</tr>
+<tr>
+<td><em>minOccurs</em></td>
+<td><code>Number</code></td>
+<td>Minimum number of times this value can be specified for a single visit.Use <code>0</code> or <code>1</code> as the default value (Required)</td>
+</tr>
+<tr>
+<td><em>maxOccurs</em></td>
+<td><code>Number</code></td>
+<td>Maximum number of times this value can be specified for a single visit (e.g., use 1 to prevent an attribute from being added to a visit multiple times)</td>
+</tr>
+<tr>
+<td><em>preferredHandlerClassname</em></td>
+<td><code>Handler</code></td>
+<td>Handler sub resource for the Custom Data Type used.Can optionally define a specific handler class want to use (otherwise the framework will choose the best handler for the chosen datatype).To find which handlers to use for the Custom DataType please refer here</td>
+</tr>
+<tr>
+<td><em>datatypeConfig</em></td>
+<td><code>String</code></td>
+<td>Allow the data type have any name and config it wants/needs.</td>
+</tr>
+<tr>
+<td><em>handlerConfig</em></td>
+<td><code>String</code></td>
+<td>Allow the handler have any name and config it wants/needs.This will help to identify the data type unambiguously which has been contained and will allow introspecting</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /visitattributetype
+{
+  "name": "Patient condition",
+  "description": "This attribute type will record the health conditon of the patient",
+  "datatypeClassname": "org.openmrs.customdatatype.datatype.LongFreeTextDatatype",
+  "minOccurs": 0,
+  "maxOccurs": 1,
+  "datatypeConfig": "default",
+  "preferredHandlerClassname": "org.openmrs.web.attribute.handler.LongFreeTextTextareaHandler",
+  "handlerConfig": "dafault"
+}
+</code></pre><h2 id='update-a-visit-attribute-type'>Update a visit attribute type</h2>
+<ul>
+<li><p>Update a target visit attribute type with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if the visit attribute not exists. If the user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>uuid</em></td>
+<td><code>target_visit_attribute_type_uuid</code></td>
+<td>Target visit attribute type resource UUID</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the visit attribute type (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description (Required)</td>
+</tr>
+<tr>
+<td><em>datatypeClassname</em></td>
+<td><code>CustomDataType Resource</code></td>
+<td>Data type for the attribute type resource.OpenMRS provides <strong>Custom data type resource</strong> which gives flexibility to select the data type accordingly (Required)</td>
+</tr>
+<tr>
+<td><em>minOccurs</em></td>
+<td><code>Number</code></td>
+<td>Minimum number of times this value can be specified for a single visit.Use <code>0</code> or <code>1</code> as the default value (Required) (Required)</td>
+</tr>
+<tr>
+<td><em>maxOccurs</em></td>
+<td><code>Number</code></td>
+<td>Maximum number of times this value can be specified for a single visit (e.g., use 1 to prevent an attribute from being added to a visit multiple times)</td>
+</tr>
+<tr>
+<td><em>preferredHandlerClassname</em></td>
+<td><code>Handler</code></td>
+<td>Handler sub resource for the Custom Data Type used.Can optionally define a specific handler class want to use (otherwise the framework will choose the best handler for the chosen datatype).To find which handlers to use for the Custom DataType please refer here</td>
+</tr>
+<tr>
+<td><em>datatypeConfig</em></td>
+<td><code>String</code></td>
+<td>Allow the data type have any name and config it wants/needs.</td>
+</tr>
+<tr>
+<td><em>handlerConfig</em></td>
+<td><code>String</code></td>
+<td>Allow the handler have any name and config it wants/needs.This will help to identify the data type unambiguously which has been contained and will allow introspecting</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /visitattributetype/:target_visit_attribute_type_uuid
+{
+  "name": "Patient condition modified",
+  "description": "This attribute type will record the health conditon of the patient",
+  "datatypeClassname": "org.openmrs.customdatatype.datatype.LongFreeTextDatatype",
+  "minOccurs": 0,
+  "maxOccurs": 2,
+  "datatypeConfig": "default",
+  "preferredHandlerClassname": "org.openmrs.web.attribute.handler.LongFreeTextTextareaHandler",
+  "handlerConfig": "dafault"
+}
+</code></pre><h2 id='delete-a-visit-attribute-type'>Delete a visit attribute type</h2>
+<ul>
+<li><p>Delete or Retire a target visit attribute type by its UUID. Returns a <code>404 Not Found</code> status if the visit attribute type not
+exists. If the user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’.Purging will attempt to irreversibly remove the attribute type from the system. Attribute types that have been used (i.e., are referenced from existing data) cannot be purged.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /visitattributetype/:target_visit_attribute_type_uuid?purge=true
+</code></pre><h1 id='location'>Location</h1><h2 id='location-overview'>Location Overview</h2>
+<ul>
+<li><p>A Location is a physical place where a patient may be seen, such as a hospital, a room, a clinic, or a district.</p></li>
+<li><p><strong>Locations may have a hierarchy</strong>,such that each location may have one parent location.</p></li>
+<li><p>Also a Location can have one or more Children location example Children&#39;s Ward might be a location within the location 
+Amani Clinic.</p></li>
+<li><p>You might also store physical areas (for example Eastern Province, or California) as Locations. </p></li>
+<li><p>You should not use locations to represent logical ideas like All District Hospitals they should be modeled using LocationTags.</p></li>
+</ul>
+<h2 id='location-sub-resource-types'>Location Sub Resource types</h2><h3 id='location-attribute'>Location Attribute.</h3>
+<ul>
+<li><p>If you wish to record extra information about location, you can create Location Attributes and assign them to Location Types.</p></li>
+<li><p>Location attributes exists specifically to allow implementations to extend the data model.</p></li>
+</ul>
+<h2 id='available-operations-for-location'>Available operations for Location</h2>
+<ol>
+<li><a href="#list-location">List location</a></li>
+<li><a href="#create-a-location">Create a location</a></li>
+<li><a href="#update-a-location">Update a location</a></li>
+<li><a href="#delete-a-location">Delete a location</a></li>
+<li><a href="#list-location-attribute-sub-resources">List location attribute sub resource</a></li>
+<li><a href="#create-a-location-attribute-sub-resource-with-properties">Create location attribute sub resource with properties</a></li>
+<li><a href="#update-a-location-attribute-sub-resource">Update location attribute sub resource</a></li>
+<li><a href="#delete-a-location-attribute-sub-resource">Delete location attribute sub resource</a></li>
+</ol>
+<h2 id='list-location'>List location</h2>
+<ul>
+<li><h3 id='list-all-non-retired-locations'>List all non-retired locations`.</h3>
+<p>Quickly filter location with given query parameters.Returns a <code>404 Not Found</code> status if the location not exists. If the 
+user not logged in to perform this action,a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Display Name of Location object.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /location?
+q="amani"
+</code></pre>
+<ul>
+<li><h3 id='list-location-by-uuid'>List location by UUID.</h3>
+<p>Retrieve a location by its UUID. Returns a <code>404 Not Found</code> status if the location not exists. If the user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /location/:target_location_uuid
+</code></pre><h2 id='create-a-location'>Create a location</h2>
+<ul>
+<li><p>To Create a location you need to specify below attributes in the request body.If the user not logged in to perform this action,
+a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the location (Required)</td>
+</tr>
+<tr>
+<td><em>address1</em></td>
+<td><code>String</code></td>
+<td>Address of the location (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description</td>
+</tr>
+<tr>
+<td><em>cityVillage</em></td>
+<td><code>String</code></td>
+<td>City/village</td>
+</tr>
+<tr>
+<td><em>stateProvince</em></td>
+<td><code>String</code></td>
+<td>State and province</td>
+</tr>
+<tr>
+<td><em>country</em></td>
+<td><code>String</code></td>
+<td>Country</td>
+</tr>
+<tr>
+<td><em>postalCode</em></td>
+<td><code>String</code></td>
+<td>Postal code of the location</td>
+</tr>
+<tr>
+<td><em>latitude</em></td>
+<td><code>String</code></td>
+<td>Latitude</td>
+</tr>
+<tr>
+<td><em>longitude</em></td>
+<td><code>String</code></td>
+<td>Longitude</td>
+</tr>
+<tr>
+<td><em>countyDistrict</em></td>
+<td><code>String</code></td>
+<td>District or Country</td>
+</tr>
+<tr>
+<td><em>tags</em></td>
+<td><code>Array[]: LocationTag UUID</code></td>
+<td>UUID&#39;s of the location tags</td>
+</tr>
+<tr>
+<td><em>parentLocation</em></td>
+<td><code>Parent Location UUID</code></td>
+<td>UUID of the target parent location</td>
+</tr>
+<tr>
+<td><em>childLocations</em></td>
+<td><code>Array[]: Child Location UUID</code></td>
+<td>UUID&#39;s of the target child locations</td>
+</tr>
+<tr>
+<td><em>attributes</em></td>
+<td><code>Array[]: Attribute UUID</code></td>
+<td>UUID&#39;s of location attributes</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /location
+{
+    "name": "Salzburg Hospital",
+    "description": "Salzburg hospital location",
+    "address1": "Mullner House 48",
+    "address2": "",
+    "cityVillage": "salzburg",
+    "stateProvince": "salzburg",
+    "country": "Austria",
+    "postalCode": "5020",
+    "latitude": "",
+    "longitude": "",
+    "countyDistrict": "salzburg",
+    "tags": [
+    "target_location_tag_uuid"
+    ],
+    "parentLocation": "target_parent_location_uuid",
+    "childLocations": [
+    "target_child_location_uuid"
+    ],
+    "attributes": [
+        {
+            "attributeType": "target_attributeType_uuid",
+            "value": "value_for_attribute"
+        }
+    ]
+}
+</code></pre><h2 id='update-a-location'>Update a location</h2>
+<ul>
+<li><p>Update a target location with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if the location not exists. If the user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>uuid</em></td>
+<td><code>target_location_uuid</code></td>
+<td>Target location resource UUID</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the location (Required)</td>
+</tr>
+<tr>
+<td><em>address1</em></td>
+<td><code>String</code></td>
+<td>Address of the location (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description</td>
+</tr>
+<tr>
+<td><em>cityVillage</em></td>
+<td><code>String</code></td>
+<td>City/village</td>
+</tr>
+<tr>
+<td><em>stateProvince</em></td>
+<td><code>String</code></td>
+<td>State and province</td>
+</tr>
+<tr>
+<td><em>country</em></td>
+<td><code>String</code></td>
+<td>Country</td>
+</tr>
+<tr>
+<td><em>postalCode</em></td>
+<td><code>String</code></td>
+<td>Postal code of the location</td>
+</tr>
+<tr>
+<td><em>latitude</em></td>
+<td><code>String</code></td>
+<td>Latitude</td>
+</tr>
+<tr>
+<td><em>longitude</em></td>
+<td><code>String</code></td>
+<td>Longitude</td>
+</tr>
+<tr>
+<td><em>countyDistrict</em></td>
+<td><code>String</code></td>
+<td>District or Country</td>
+</tr>
+<tr>
+<td><em>tags</em></td>
+<td><code>Array[]: LocationTag UUID</code></td>
+<td>UUID&#39;s of the location tags</td>
+</tr>
+<tr>
+<td><em>parentLocation</em></td>
+<td><code>Parent Location UUID</code></td>
+<td>UUID of the target parent location</td>
+</tr>
+<tr>
+<td><em>childLocations</em></td>
+<td><code>Array[]: Child Location UUID</code></td>
+<td>UUID&#39;s of the target child locations</td>
+</tr>
+<tr>
+<td><em>attributes</em></td>
+<td><code>Array[]: Attribute UUID</code></td>
+<td>UUID&#39;s of location attributes</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /location/:target_location_uuid
+{
+    "name": "Salzburg Hospital",
+    "description": "Modified location of Salzburg hospital location",
+    "address1": "Mullner House 48",
+    "address2": "",
+    "cityVillage": "salzburg",
+    "stateProvince": "salzburg",
+    "country": "Austria",
+    "postalCode": "5020",
+    "latitude": "47.811195",
+    "longitude": "13.03322",
+    "countyDistrict": "salzburg",
+    "tags": [
+    "target_location_tag_uuid"
+    ],
+    "parentLocation": "target_parent_location_uuid",
+    "childLocations": [
+    "target_child_location_uuid"
+    ],
+    "attributes": [
+        {
+            "attributeType": "target_attributeType_uuid",
+            "value": "value_for_attribute"
+        }
+    ]
+}       
+</code></pre><h2 id='delete-a-location'>Delete a location</h2>
+<ul>
+<li><p>Delete or Retire a target location by its UUID. Returns a <code>404 Not Found</code> status if the location not exists.If the user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /location/:target_location_uuid?purge=true
+</code></pre><h2 id='list-location-attribute-sub-resources'>List location attribute sub resources</h2>
+<ul>
+<li><h3 id='list-all-location-attribute-sub-resources-for-a-location'>List all location attribute sub resources for a location.</h3>
+<p>Retrieve all <b>attribute</b> sub resources of a  <b>location</b> resource by target_location_uuid.Returns a 
+<code>404 Not Found</code> status if the attribute not exists. If the user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /location/:target_location_uuid/attribute 
+</code></pre>
+<ul>
+<li><h3 id='list-location-attribute-sub-resources-by-own-uuid-and-parent-location-uuid'>List location attribute sub resources by own UUID and parent location UUID.</h3>
+<p>Retrieve an <b>attribute</b> sub resources of a <b>location</b> resource.Returns a 
+ <code>404 Not Found</code> status if the attribute not exists. If the user are not logged in to perform this action, a <code>401 Unauthorized</code> status
+ returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /location/:target_location_uuid/attribute/:target_attribute_uuid
+</code></pre><h2 id='create-a-location-attribute-sub-resource-with-properties'>Create a location attribute sub resource with properties</h2>
+<ul>
+<li><p>To Create an attribute sub resource for a specific location resource you need to specify below attributes in the request body.
+If the user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes-3'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>attributeType</em></td>
+<td><code>Attribute_Type UUID</code></td>
+<td>Create Attribute from this Location Attribute_Type</td>
+</tr>
+<tr>
+<td><em>value</em></td>
+<td><code>Depends on Attribute_Type Selected</code></td>
+<td>Value for the attribute</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST location/:target_location_uuid/attribute 
+{
+    "attributeType": "target_location_attribute_type_uuid",
+    "value": "value_for_the_attriute"
+}
+</code></pre><h2 id='update-a-location-attribute-sub-resource'>Update a location attribute sub resource</h2>
+<ul>
+<li><p>Updates a location attribute sub resource value with given uuid, this method will only modify value of the sub resource.Returns 
+a <code>404 Not Found</code> status if the attribute not exists.If the user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p>
+<h3 id='attributes-4'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>attributeType</em></td>
+<td><code>Attribute_Type UUID</code></td>
+<td>Location Attribute_Type resource UUID</td>
+</tr>
+<tr>
+<td><em>updated value</em></td>
+<td><code>Depends on Attribute_Type Selected</code></td>
+<td>Updated value for the attribute</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST location/:target_location_uuid/attribute/:target_location_attribute_uuid
+{
+    "attributeType": "target_attribute_type_uuid",
+    "value": "modified_attriute_value"
+} 
+</code></pre><h2 id='delete-a-location-attribute-sub-resource'>Delete a location attribute sub resource</h2>
+<ul>
+<li><p>Delete or Retire a target location attribute sub resource by its UUID.Returns a <code>404 Not Found</code> status if the attribute not exists. 
+If the user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-4'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /location/:target_location_uuid/attribute/:target_location_attribute_uuid
+</code></pre><h1 id='location-tag-type'>Location Tag Type</h1><h2 id='location-tag-overview'>Location Tag Overview</h2>
+<ul>
+<li><p>Tags are strings attached to an entity (like tagging of blog entries) to form a folksonomy and/or to categorize data. </p></li>
+<li><p>Location Tags are being used to tag locations, which enables the system to act based on the presence of tags on specific locations. </p></li>
+<li><p>You should not use locations to represent logical ideas like <code>All-District Hospitals</code>. They should be modeled using LocationTags.</p></li>
+<li><p>For example, location tags may be used to control which locations are included in a choice list or to define which locations included in a report.</p></li>
+</ul>
+<h2 id='available-operations-for-location-tag'>Available operations for Location Tag</h2>
+<ol>
+<li><a href="#list-location-tags">List location tags</a></li>
+<li><a href="#create-a-location-tag">Create a location tag</a></li>
+<li><a href="#update-a-location-tag">Update a location tag</a></li>
+<li><a href="#delete-a-location-tag">Delete a location tag</a></li>
+</ol>
+<h2 id='list-location-tags'>List location tags</h2>
+<ul>
+<li><h3 id='list-all-non-retired-location-tags'>List all non-retired location tags.</h3>
+<p>Quickly filter location tags with a given search query. Returns a <code>404 Not Found</code> status if the location tag not exists.
+If the user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Display Name of Location location tag type.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /locationtag?q="visit"
+</code></pre>
+<ul>
+<li><h3 id='list-location-tag-by-uuid'>List location tag by UUID.</h3>
+<p>Retrieve a location tag by its UUID. Returns a <code>404 Not Found</code> status if the location tag type not exists. If the 
+user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /locationtag/:target_location_tag_uuid
+</code></pre><h2 id='create-a-location-tag'>Create a location tag</h2>
+<ul>
+<li><p>To Create a location tag  you need to specify below attributes in the request body.If the user not logged in to perform this action,
+a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the location tag  (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description (Required)</td>
+</tr>
+<tr>
+<td><em>retired</em></td>
+<td><code>Boolean</code></td>
+<td>Retired status of the location tag</td>
+</tr>
+<tr>
+<td><em>retiredReason</em></td>
+<td><code>String</code></td>
+<td>For location tags that are retired, this may contain an explanation of why the location tag was retired.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /locationtag
+{
+  "name": "Visit Location",
+  "description": "Visits are only allowed to happen at locations tagged with this location tag.",
+  "retired": false
+}
+</code></pre><h2 id='update-a-location-tag'>Update a location tag</h2>
+<ul>
+<li><p>Update a target location tag with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if the location tag not exists. If the user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>uuid</em></td>
+<td><code>target_location_tag_uuid</code></td>
+<td>Target location tag resource UUID</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the location tag type (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description (Required)</td>
+</tr>
+<tr>
+<td><em>retired</em></td>
+<td><code>Boolean</code></td>
+<td>Retired status of the location tag</td>
+</tr>
+<tr>
+<td><em>retiredReason</em></td>
+<td><code>String</code></td>
+<td>For location tags that are retired, this may contain an explanation of why the location tag was retired.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /locationtag/:target_location_tag_uuid
+{
+  "name": "Visit Location",
+  "description": "Visits are only allowed to happen at locations tagged with this location tag.",
+  "retired": true,
+  "retiredReason": "Not valid anymore"
+}
+</code></pre><h2 id='delete-a-location-tag'>Delete a location tag</h2>
+<ul>
+<li><p>Delete or Retire a target location tag type by its UUID. Returns a <code>404 Not Found</code> status if the location tag not
+exists. If the user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’. Purging will attempt to irreversibly remove the tag from the system. Location tags types that have been used (i.e., are referenced from existing data) cannot be purged.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /locationtag/:target_location_tag_uuid?purge=true
+</code></pre><h1 id='location-attribute-type'>Location Attribute Type</h1><h2 id='location-attribute-overview'>Location Attribute Overview</h2>
+<ul>
+<li>If you wish to record extra information about locations, you can create Location Attributes and assign them to Location Types. </li>
+</ul>
+<h2 id='available-operations-for-location-attribute'>Available operations for Location Attribute</h2>
+<ol>
+<li><a href="#list-location-attribute-types">List location attribute types</a></li>
+<li><a href="#create-a-location-attribute-type">Create a location attribute type</a></li>
+<li><a href="#update-a-location-attribute-type">Update a location attribute type</a></li>
+<li><a href="#delete-a-location-attribute-type">Delete a location attribute type</a></li>
+</ol>
+<h3 id='list-location-attribute-types'>List location attribute types</h3>
+<ul>
+<li><h3 id='list-all-non-retired-location-attribute-types'>List all non-retired location attribute types.</h3>
+<p>Quickly filter location attribute types with a given search query. Returns a <code>404 Not Found</code> status if the location attribute type not exists.
+ If the user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Display Name of Location attribute type.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /locationattributetype?q="humidity"
+</code></pre>
+<ul>
+<li><h3 id='list-location-attribute-type-by-uuid'>List location attribute type by UUID.</h3>
+<p>Retrieve a location attribute type by its UUID. Returns a <code>404 Not Found</code> status if the location attribute type not exists. If the 
+user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /locationattributetype/:target_location_attribute_type_uuid
+</code></pre><h2 id='create-a-location-attribute-type'>Create a location attribute type</h2>
+<ul>
+<li><p>To Create a location attribute type you need to specify below attributes in the request body. If the user not logged in to perform this action,
+a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the location attribute type (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description (Required)</td>
+</tr>
+<tr>
+<td><em>datatypeClassname</em></td>
+<td><code>CustomDataType Resource</code></td>
+<td>Data type for the attribute type resource. OpenMRS provides <strong>Custom data type resource</strong> which gives flexibility to select the data type accordingly (Required)</td>
+</tr>
+<tr>
+<td><em>minOccurs</em></td>
+<td><code>Number</code></td>
+<td>Minimum number of times this value can be specified for a single location. Use <code>0</code> or <code>1</code> as the default value (Required)</td>
+</tr>
+<tr>
+<td><em>maxOccurs</em></td>
+<td><code>Number</code></td>
+<td>Maximum number of times this value can be specified for a single location (e.g., use 1 to prevent an attribute from being added to a location multiple times)</td>
+</tr>
+<tr>
+<td><em>preferredHandlerClassname</em></td>
+<td><code>Handler</code></td>
+<td>Handler sub resource for the Custom Data Type used. Can optionally define a specific handler class want to use (otherwise the framework will choose the best handler for the chosen datatype). To find which handlers to use for the Custom DataType please refer here</td>
+</tr>
+<tr>
+<td><em>datatypeConfig</em></td>
+<td><code>String</code></td>
+<td>Allow the data type have any name and config it wants/needs.</td>
+</tr>
+<tr>
+<td><em>handlerConfig</em></td>
+<td><code>String</code></td>
+<td>Allow the handler have any name and config it wants/needs. This will help to identify the data type unambiguously which has been contained and will allow introspecting</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /locationattributetype
+{
+  "name": "humidity",
+  "description": "This attribute type will record the humidity of the location",
+  "datatypeClassname": "org.openmrs.customdatatype.datatype.LongFreeTextDatatype",
+  "minOccurs": 0,
+  "maxOccurs": 1,
+  "datatypeConfig": "default",
+  "preferredHandlerClassname": "org.openmrs.web.attribute.handler.LongFreeTextTextareaHandler",
+  "handlerConfig": "dafault"
+}
+</code></pre><h2 id='update-a-location-attribute-type'>Update a location attribute type</h2>
+<ul>
+<li><p>Update a target location attribute type with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if the location attribute not exists. If the user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>uuid</em></td>
+<td><code>target_location_attribute_type_uuid</code></td>
+<td>Target location attribute type resource UUID</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name of the location attribute type (Required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description (Required)</td>
+</tr>
+<tr>
+<td><em>datatypeClassname</em></td>
+<td><code>CustomDataType Resource</code></td>
+<td>Data type for the attribute type resource. OpenMRS provides <strong>Custom data type resource</strong> which gives flexibility to select the data type accordingly (Required)</td>
+</tr>
+<tr>
+<td><em>minOccurs</em></td>
+<td><code>Number</code></td>
+<td>Minimum number of times this value can be specified for a single location. Use <code>0</code> or <code>1</code> as the default value (Required)</td>
+</tr>
+<tr>
+<td><em>maxOccurs</em></td>
+<td><code>Number</code></td>
+<td>Maximum number of times this value can be specified for a single location (e.g., use 1 to prevent an attribute from being added to a location multiple times)</td>
+</tr>
+<tr>
+<td><em>preferredHandlerClassname</em></td>
+<td><code>Handler</code></td>
+<td>Handler sub resource for the Custom Data Type used. Can optionally define a specific handler class want to use (otherwise the framework will choose the best handler for the chosen datatype). To find which handlers to use for the Custom DataType please refer here</td>
+</tr>
+<tr>
+<td><em>datatypeConfig</em></td>
+<td><code>String</code></td>
+<td>Allow the data type have any name and config it wants/needs.</td>
+</tr>
+<tr>
+<td><em>handlerConfig</em></td>
+<td><code>String</code></td>
+<td>Allow the handler have any name and config it wants/needs. This will help to identify the data type unambiguously which has been contained and will allow introspecting</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /locationattributetype/:target_location_attribute_type_uuid
+{
+  "name": "humidity",
+  "description": "This attribute type will record the humidity of the location"",
+  "datatypeClassname": "org.openmrs.customdatatype.datatype.LongFreeTextDatatype",
+  "minOccurs": 0,
+  "maxOccurs": 2,
+  "datatypeConfig": "default",
+  "preferredHandlerClassname": "org.openmrs.web.attribute.handler.LongFreeTextTextareaHandler",
+  "handlerConfig": "dafault"
+}
+</code></pre><h2 id='delete-a-location-attribute-type'>Delete a location attribute type</h2>
+<ul>
+<li><p>Delete or Retire a target location attribute type by its UUID. Returns a <code>404 Not Found</code> status if the location attribute type not
+exists. If the user not logged in to  perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided/retired unless purge = ‘true’. Purging will attempt to irreversibly remove the attribute type from the system. Attribute types that have been used (i.e., are referenced from existing data) cannot be purged.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /locationattributetype/:target_location_attribute_type_uuid?purge=true
+</code></pre><h1 id='encounters'>Encounters</h1><h2 id='encounter-overview'>Encounter Overview</h2>
+<ul>
+<li><p>An encounter represents an interaction between a patient and the healthcare system at a single point in time. 
+Common examples would be a patient seeing a doctor during a clinic visit, a patient going to the lab to have blood drawn for
+testing, or telephone call between a provider and the patient).</p></li>
+<li><p>Each encounter has an encounter type, date/time, location, and provider.</p></li>
+<li><p>Encounters are classified into Encounter Types, which describe the type of interaction the encounter represents – e.g., 
+&quot;HIV Initial&quot;, &quot;Pediatric Follow Up&quot;, &quot;Lab&quot;). Implementations can define their own types of encounters.</p></li>
+<li><p>One or more encounters may be grouped within a <strong>Visit</strong> (e.g., an outpatient clinic visit or a hospitalization).</p></li>
+<li><p>Every encounter can have 0 to n <strong>Observations</strong> associated with it.</p></li>
+<li><p>Every encounter can have 0 to n <strong>Orders</strong> associated with it.</p></li>
+</ul>
+<h2 id='let-s-look-at-an-example-of-encounter'>Let’s look at an example of Encounter</h2>
+<p>During a typical Amani Clinic Outpatient Visit, a patient checks in at registration, is seen by a doctor, and receives medicine 
+dispensed in the pharmacy. This would be recorded as <strong>one visit</strong> containing three encounters, whose types are <strong>Registration, 
+Consultation, and Dispensing</strong>.</p>
+<h2 id='sub-resource-types-of-encounter'>Sub Resource types of Encounter</h2><h3 id='encounter-provider'>Encounter Provider</h3>
+<ul>
+<li><p>A Provider is a person who provides care or services to patients. </p></li>
+<li><p>A provider may be a clinician like a doctor or nurse, a social worker, or a lab tech. </p></li>
+<li><p>Any healthcare worker that a patient can have an encounter with is a provider.</p></li>
+</ul>
+<h2 id='available-operations-for-encounter'>Available operations for Encounter</h2>
+<ol>
+<li><a href="#list-encounters">List encounters</a></li>
+<li><a href="#create-a-encounters">Create an encounters</a></li>
+<li><a href="#update-a-encounters">Update an encounters</a></li>
+<li><a href="#delete-a-encounters">Delete an encounters</a></li>
+<li><a href="#list-encounter-provider-sub-resources">List encounter provider sub resource</a></li>
+<li><a href="#create-encounter-provider-sub-resource-with-properties">Create encounter provider  sub resource with properties</a></li>
+<li><a href="#update-encounter-provider-sub-resource">Update encounter provider  sub resource</a></li>
+<li><a href="#delete-encounter-provider-sub-resource">Delete encounter provider  sub resource</a></li>
+</ol>
+<h2 id='list-encounters'>List encounters</h2>
+<ul>
+<li><h3 id='list-all-non-voided-encounters'>List all non-voided encounters.</h3>
+<p>Quickly filter encounters with given query parameters.Returns a <code>404 Not Found</code> status if encounter not exists. If user not logged 
+in to perform this action,a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Get encounter by Encounter UUID, Patient Identifier or name</td>
+</tr>
+<tr>
+<td><em>patient</em></td>
+<td><code>Patient UUID</code></td>
+<td>Get encounter(s) for a patient</td>
+</tr>
+<tr>
+<td><em>encounterType</em></td>
+<td><code>Encounter_Type UUID</code></td>
+<td>Filter by encounter type (must be used with patient)</td>
+</tr>
+<tr>
+<td><em>order</em></td>
+<td><code>Order UUID</code></td>
+<td>Filter to encounter(s) containing the specified order (must be used with patient)</td>
+</tr>
+<tr>
+<td><em>obsConcept</em></td>
+<td><code>Concept UUID</code></td>
+<td>Filter to encounter(s) containing observation(s) for the given concept (must be used with patient)</td>
+</tr>
+<tr>
+<td><em>obsValues</em></td>
+<td><code>String</code></td>
+<td>Filter to encounter(s) containing an observations with the given value (must be used with patient &amp; obsConcept)</td>
+</tr>
+<tr>
+<td><em>fromdate</em></td>
+<td><code>Date or Timestamp (ISO 8601)</code></td>
+<td>Start date of the encounter (must be used with patient)</td>
+</tr>
+<tr>
+<td><em>todate</em></td>
+<td><code>Date or Timestamp (ISO 8601)</code></td>
+<td>End date of the encounter (must be used with patient)</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /encounter?
+patient=96be32d2-9367-4d1d-a285-79a5e5db12b8
+&amp;fromdate=2016-10-08
+</code></pre>
+<ul>
+<li><h3 id='list-encounter-by-uuid'>List encounter by UUID.</h3>
+<p>Retrieve an encounter by its UUID. Returns a <code>404 Not Found</code> status if encounter not exists. If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /encounter/:target_encounter_uuid
+</code></pre><h2 id='create-an-encounter'>Create an encounter</h2>
+<ul>
+<li><p>To Create an encounter you need to specify below attributes in the request body.If you are not logged in to perform this action,
+a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>encounterDatetime</em></td>
+<td><code>Date (ISO8601 Long)</code></td>
+<td>The date and time the encounter was created (required)</td>
+</tr>
+<tr>
+<td><em>patient</em></td>
+<td><code>Patient UUID</code></td>
+<td>The patient to whom the encounter applies</td>
+</tr>
+<tr>
+<td><em>encounterType</em></td>
+<td><code>EncounterType UUID</code></td>
+<td>The type of encounter – e.g., Initial visit, Return visit, etc. (required)</td>
+</tr>
+<tr>
+<td><em>location</em></td>
+<td><code>Location UUID</code></td>
+<td>The location at which the encounter occurred (required)</td>
+</tr>
+<tr>
+<td><em>encounterProviders</em></td>
+<td><code>Array of Provider UUID and associated Encounter Role UUID</code></td>
+<td>An array of providers and their role within the encounter. At least one provider is required</td>
+</tr>
+<tr>
+<td><em>obs</em></td>
+<td><code>Array[]: Obs</code></td>
+<td>Array of observations and values for the encounter</td>
+</tr>
+<tr>
+<td><em>orders</em></td>
+<td><code>Array[]: Order UUID</code></td>
+<td>List of orders created during the encounter</td>
+</tr>
+<tr>
+<td><em>form</em></td>
+<td><code>Form UUID</code></td>
+<td>Target Form UUID to be filled for the encounter</td>
+</tr>
+<tr>
+<td><em>visit</em></td>
+<td><code>Visit UUID</code></td>
+<td>When creating an encounter for an existing visit, this specifies the visit</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /encounter
+{
+  "encounterDatetime": "2019-10-16 12:08:43",
+  "patient": "070f0120-0283-4858-885d-a20d967729cf",
+  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+  "location": "aff27d58-a15c-49a6-9beb-d30dcfc0c66e",
+  "encounterProviders": [
+    {
+      "provider": "bb1a7781-7896-40be-aaca-7d1b41d843a6",
+      "encounterRole": "240b26f9-dd88-4172-823d-4a8bfeb7841f"
+    }
+  ]
+}
+</code></pre><h2 id='update-an-encounter'>Update an encounter</h2>
+<ul>
+<li><p>Update a target encounter with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if encounter not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>encounterDatetime</em></td>
+<td><code>Date (ISO8601 Long)</code></td>
+<td>The date and time the encounter was created</td>
+</tr>
+<tr>
+<td><em>patient</em></td>
+<td><code>Patient UUID</code></td>
+<td>The patient to whom the encounter applies</td>
+</tr>
+<tr>
+<td><em>encounterType</em></td>
+<td><code>EncounterType UUID</code></td>
+<td>The type of encounter – e.g., Initial visit, Return visit, etc.</td>
+</tr>
+<tr>
+<td><em>location</em></td>
+<td><code>Location UUID</code></td>
+<td>The location at which the encounter occurred</td>
+</tr>
+<tr>
+<td><em>encounterProviders</em></td>
+<td><code>Array of Provider UUID and associated Encounter Role UUID</code></td>
+<td>An array of providers and their role within the encounter. At least one provider is required</td>
+</tr>
+<tr>
+<td><em>obs</em></td>
+<td><code>Array[]: Obs</code></td>
+<td>Array of observations and values for the encounter</td>
+</tr>
+<tr>
+<td><em>orders</em></td>
+<td><code>Array[]: Order UUID</code></td>
+<td>List of orders created during the encounter</td>
+</tr>
+<tr>
+<td><em>form</em></td>
+<td><code>Form UUID</code></td>
+<td>Target Form UUID to be filled for the encounter</td>
+</tr>
+<tr>
+<td><em>visit</em></td>
+<td><code>Visit UUID</code></td>
+<td>When creating an encounter for an existing visit, this specifies the visit</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /encounter/:target_encounter_uuid
+{
+  "encounterDatetime": "2019-10-16 12:08:43",
+  "patient": "070f0120-0283-4858-885d-a20d967729cf",
+  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+  "location": "aff27d58-a15c-49a6-9beb-d30dcfc0c66e",
+  "encounterProviders": [
+    {
+      "provider": "bb1a7781-7896-40be-aaca-7d1b41d843a6",
+      "encounterRole": "240b26f9-dd88-4172-823d-4a8bfeb7841f"
+    }
+  ]
+}
+</code></pre><h2 id='delete-an-encounter'>Delete an encounter</h2>
+<ul>
+<li><p>Delete or Void a target encounter by its UUID. Returns a <code>404 Not Found</code> status if encounter not exists.If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>  DELETE /encounter/:target_encounter_uuid?purge=true
+</code></pre><h2 id='list-encounter-provider-sub-resources'>List encounter provider sub resources</h2>
+<ul>
+<li><h3 id='list-all-encounter-provider-sub-resources-for-a-visit'>List all encounter provider sub resources for a visit.</h3>
+<p>Retrieve all <b>encounter provider</b> sub resources of an  <b>encounter</b> resource by target_encounter_uuid. Returns a 
+<code>404 Not Found</code> status if encounter provider not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /encounter/:target_encounter_uuid/encounterprovider 
+</code></pre>
+<ul>
+<li><h3 id='list-encounter-provider-sub-resources-by-it-39-s-uuid-and-parent-encounter-uuid'>List encounter provider sub resources by it&#39;s UUID and parent encounter UUID.</h3>
+<p>Retrieve an <b>encounter provider</b> sub resources of a <b>encounter</b> resource. Returns a 
+ <code>404 Not Found</code> status if encounter provider not exists. If you are not logged in to perform this action, a <code>401 Unauthorized</code> status
+ returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /encounter/:target_encounter_uuid/encounterprovider/:target_encounter_provider_uuid
+</code></pre><h2 id='create-an-encounter-provider-sub-resource-with-properties'>Create an encounter provider sub resource with properties</h2>
+<ul>
+<li><p>To Create an attribute sub resource for a specific visit resource you need to specify below attributes in the request body.
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes-3'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>provider</em></td>
+<td><code>Provider_Type UUID</code></td>
+<td>UUID of a provider currently registered in OpenMRS (required)</td>
+</tr>
+<tr>
+<td><em>encounterRole</em></td>
+<td><code>Encounter_Role UUID</code></td>
+<td>UUID of encounter role. This is the role provider will participate during this encounter (required)</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST encounter/:target_encounter_uuid/encounterprovider 
+{
+  "provider": "bb1a7781-7896-40be-aaca-7d1b41d843a6",
+  "encounterRole": "240b26f9-dd88-4172-823d-4a8bfeb7841f"
+}
+</code></pre><h2 id='update-encounter-provider-sub-resource'>Update encounter provider sub resource</h2>
+<ul>
+<li><p>Updates an encounter provider sub resource value with given uuid, this method will only modify value of the sub resource. Returns 
+a <code>404 Not Found</code> status if encounter provider not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>parent_uuid</em></td>
+<td><code>Encounter UUID</code></td>
+<td>Target encounter resource UUID</td>
+</tr>
+<tr>
+<td><em>uuid</em></td>
+<td><code>Encounter_Provider UUID</code></td>
+<td>Target encounter provider resource UUID</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-4'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>provider</em></td>
+<td><code>Provider UUID</code></td>
+<td>UUID of a provider currently registered in OpenMRS (required)</td>
+</tr>
+<tr>
+<td><em>encounterRole</em></td>
+<td><code>Encounter_Role UUID</code></td>
+<td>UUID of encounter role. This is the role provider will participate during this encounter (required)</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST encounter/:target_encounter_uuid/encounterprovider/:target_encounter_provider_uuid
+{
+  "provider": "bb1a7781-7896-40be-aaca-7d1b41d843a6",
+  "encounterRole": "240b26f9-dd88-4172-823d-4a8bfeb7841f"
+}
+</code></pre><h2 id='delete-encounter-provider-sub-resource'>Delete encounter provider sub resource</h2>
+<ul>
+<li><p>Delete or Voided a target encounter provider sub resource by its UUID. Returns a <code>404 Not Found</code> status if attribute not exists. 
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-4'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided unless purge = ‘true’. Purging will attempt to irreversibly remove the encounter provider type from the system. Encounter provider types that have been used (i.e., are referenced from existing data) cannot be purged.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /encounter/:target_encounter_uuid/encounterprovider/:target_encounter_provider_uuid
+</code></pre><h1 id='encounter-type'>Encounter Type</h1><h2 id='encounter-type-overview'>Encounter Type Overview</h2>
+<ul>
+<li><p>Encounters represent an interaction between the patient and healthcare system. Since there are a wide variety of ways in
+which these interactions may occur, OpenMRS allows you categorize them by defining different types of encounter. For example, 
+&quot;Adult Primary Care Initial Visit&quot; and &quot;In-Between Visit Documentation&quot; could be different types of encounters.</p></li>
+<li><p>You could define encounter type for locations such as Pharmacy, Lab, Consultation room or for actions such as admission or discharge.</p></li>
+</ul>
+<h2 id='available-operations-for-encounter-type'>Available operations for Encounter Type</h2>
+<ol>
+<li><a href="#list-encounter-types">List encounter types</a></li>
+<li><a href="#create-a-encounter-type">Create an encounter type</a></li>
+<li><a href="#update-a-encounters-type">Update an encounter type</a></li>
+<li><a href="#delete-a-encounters-type">Delete an encounter type</a></li>
+</ol>
+<h2 id='list-encounter-types'>List encounter types</h2>
+<ul>
+<li><h3 id='list-all-not-retired-encounter-types'>List all  not-retired encounter types.</h3>
+<p>Quickly filter encounter types with given query parameters.Returns a <code>404 Not Found</code> status if encounter types not exists. 
+If user not logged in to perform this action,a <code>401 Unauthorized</code> status returned.</p>
+<h5 id='query-parameters'>Query Parameters</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Query to filter encounter type by its name</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /encountertype?
+    q=Admission
+</code></pre>
+<ul>
+<li><h3 id='get-encounter-type-by-uuid'>Get encounter type by UUID.</h3>
+<p>Retrieve an encounter type by its UUID. Returns a <code>404 Not Found</code> status if encounter type not exists. If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /encountertype/:target_encounter_type_uuid
+</code></pre><h2 id='create-an-encounter-type'>Create an encounter type</h2>
+<ul>
+<li><p>To Create an encounter type you need to specify below attributes in the request body. If you are not logged in to perform 
+this action, a <code>401 Unauthorized</code> status returned.</p>
+<h4 id='attributes'>Attributes</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name for the encounter type (required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description for the encounter type (required)</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /encountertype
+{
+    "name": "Discharge",
+    "description": "Attach encounters related to hospital dischargers"
+}
+</code></pre><h2 id='update-an-encounter-type'>Update an encounter type</h2>
+<ul>
+<li><p>Update a target encounter type with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if encounter type not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name for the encounter type</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td><code>String</code></td>
+<td>Description for the encounter type</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /encountertype/:target_encounter_type_uuid
+{
+    "name": "Discharge",
+    "description": "Encounters related to hospital dischargers"
+}
+</code></pre><h2 id='delete-an-encounter-type'>Delete an encounter type</h2>
+<ul>
+<li><p>Delete or retire a target encounter type by its UUID. Returns a <code>404 Not Found</code> status if encounter type not exists.If user 
+not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /encountertype/:target_encounter_type_uuid?purge=true
+</code></pre><h1 id='encounter-role'>Encounter Role</h1><h2 id='encounter-role-overview'>Encounter Role Overview</h2>
+<ul>
+<li>An Encounter role is specific to the <a href="encounter.md">encounter</a>. While these could match up to existing organizational roles (e.g., “Nurse”), 
+they don’t have to (e.g., “Lead Surgeon”).</li>
+</ul>
+<h2 id='available-operation-for-encounter-roles'>Available operation for Encounter Roles</h2>
+<ol>
+<li><a href="#list-encounter-roles">List encounter roles</a></li>
+<li><a href="#create-a-encounter-role">Create an encounter role</a></li>
+<li><a href="#update-a-encounters-role">Update an encounter role</a></li>
+<li><a href="#delete-a-encounters-role">Delete an encounter role</a></li>
+</ol>
+<h2 id='list-encounter-roles'>List encounter roles</h2>
+<ul>
+<li><h3 id='list-all-non-voided-encounter-roles'>List all non-voided encounter roles.</h3>
+<p>Quickly filter encounter roles with given query parameters.Returns a <code>404 Not Found</code> status if encounter roles not exists. 
+ If user not logged in to perform this action,a <code>401 Unauthorized</code> status returned.</p>
+<h5 id='query-parameters'>Query Parameters</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Query to filter encounter role by its name</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /encounterrole?
+    q=Clinician
+    ```
+
+* ### Get encounter role by UUID.
+
+    Retrieve an encounter role by its UUID. Returns a `404 Not Found` status if encounter role not exists. If user not logged 
+    in to perform this action, a `401 Unauthorized` status returned.
+
+```console
+GET /encounter/:target_encounter_role_uuid
+</code></pre><h2 id='create-an-encounter-role'>Create an encounter role</h2>
+<ul>
+<li><p>To Create an encounter role you need to specify below attributes in the request body. If you are not logged in to perform 
+this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name for the encounter role (required)</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td>`String</td>
+<td>Description for the encounter role (required)</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /encounterrole
+{
+    "name": "Clinician",
+    "description": "A provider assisting the Lead Surgeon."
+}
+</code></pre><h2 id='update-an-encounter-role'>Update an encounter role</h2>
+<ul>
+<li><p>Update a target encounter role with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if encounter role not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>name</em></td>
+<td><code>String</code></td>
+<td>Name for the encounter role</td>
+</tr>
+<tr>
+<td><em>description</em></td>
+<td>`String</td>
+<td>Description for the encounter role</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /encounterrole/:target_encounter_role_uuid
+{
+    "name": "Assisting Surgeon"",
+    "description": "A surgeon who assisted the Lead Surgeon"
+}
+</code></pre><h2 id='delete-an-encounter-role'>Delete an encounter role</h2>
+<ul>
+<li><p>Delete or Void a target encounter role by its UUID. Returns a <code>404 Not Found</code> status if encounter role not exists.If user 
+not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be voided unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /encounterrole/:target_encounter_role_uuid?purge=true
+</code></pre><h1 id='providers'>Providers</h1><h2 id='provider-overview'>Provider Overview</h2>
+<ul>
+<li><p>A Provider is a person who provides care or services to patients. A provider may be a clinician like a doctor or nurse, 
+a social worker, or a lab tech. Generally speaking, any healthcare worker that a patient can have an encounter with is a provider.</p></li>
+<li><p>Providers may have full records in OpenMRS as persons, or they may just be a simple name and ID number.</p></li>
+</ul>
+<h2 id='sub-resource-types-of-provider'>Sub Resource types of Provider</h2><h2 id='provider-attribute'>Provider Attribute.</h2>
+<ul>
+<li><p>If you wish to record extra information about providers, you can create Provider Attributes.</p></li>
+<li><p>Provider attributes exists specifically to allow implementations to extend the data model.</p></li>
+</ul>
+<h2 id='available-operations-for-provider'>Available operations for Provider.</h2>
+<ol>
+<li><a href="#list-providers">List providers</a></li>
+<li><a href="#create-a-provider">Create a provider</a></li>
+<li><a href="#update-a-provider">Update a provider</a></li>
+<li><a href="#delete-a-provider">Delete a provider</a></li>
+<li><a href="#list-provider-attribute-sub-resources">List provider attribute sub resource</a></li>
+<li><a href="#create-provider-attribute-sub-resource-with-properties">Create provider attribute sub resource with properties</a></li>
+<li><a href="#update-provider-attribute-sub-resource">Update provider attribute sub resource</a></li>
+<li><a href="#delete-provider-attribute-sub-resource">Delete provider attribute sub resource</a></li>
+</ol>
+<h2 id='list-providers'>List providers</h2>
+<ul>
+<li><h3 id='list-all-non-retired-providers'>List all non-retired providers.</h3>
+<p>Quickly filter providers with given query parameters.Returns a <code>404 Not Found</code> status if provider not exists. If user not logged 
+in to perform this action,a <code>401 Unauthorized</code> status returned.</p>
+<h5 id='query-parameters'>Query Parameters</h5>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>q</em></td>
+<td><code>Search Query</code></td>
+<td>Get provider by name</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /provider?
+q=clerk
+</code></pre>
+<ul>
+<li><h3 id='query-provider-by-uuid'>Query provider by UUID.</h3>
+<p>Retrieve an provider by its UUID. Returns a <code>404 Not Found</code> status if provider not exists. If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /provider/:target_provider_uuid
+</code></pre><h2 id='create-a-provider'>Create a provider</h2>
+<ul>
+<li><p>To Create an provider you need to specify below attributes in the request body.If you are not logged in to perform this action,
+a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>person</em></td>
+<td><code>Person UUID</code></td>
+<td>Target person who will be a provider for OpenMRS (required)</td>
+</tr>
+<tr>
+<td><em>identifier</em></td>
+<td><code>String</code></td>
+<td>Value of the identifier.Identifier is used to virtually group providers in to groups (required)</td>
+</tr>
+<tr>
+<td><em>attributes</em></td>
+<td><code>Array[]: Attribute</code></td>
+<td>List of provider attributes</td>
+</tr>
+<tr>
+<td><em>retired</em></td>
+<td><code>Boolean</code></td>
+<td>Retired status for the provider.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /provider
+{
+  "person": "007037a0-0500-11e3-8ffd-0800200c9a66",
+  "identifier": "doctor",
+  "attributes": [
+    {
+      "attributeType": "target_attributeType_uuid",
+      "value": "value_for_attribute"
+    }
+  ],
+  "retired": false
+}
+</code></pre><h2 id='update-a-provider'>Update a provider</h2>
+<ul>
+<li><p>Update a target provider with given UUID, this method only modifies properties in the request. Returns a <code>404 Not Found</code> 
+status if provider not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes-2'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>person</em></td>
+<td><code>Person UUID</code></td>
+<td>Target person who will be a provider for OpenMRS (required)</td>
+</tr>
+<tr>
+<td><em>identifier</em></td>
+<td><code>String</code></td>
+<td>Value of the identifier.Identifier is used to virtually group providers in to groups (required)</td>
+</tr>
+<tr>
+<td><em>attributes</em></td>
+<td><code>Array[]: Attribute</code></td>
+<td>List of provider attributes</td>
+</tr>
+<tr>
+<td><em>retired</em></td>
+<td><code>Boolean</code></td>
+<td>Retired status for the provider.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST /provider/:target_provider_uuid
+{
+  "person": "007037a0-0500-11e3-8ffd-0800200c9a66",
+  "identifier": "doctor",
+  "attributes": [
+    {
+      "attributeType": "target_attributeType_uuid",
+      "value": "value_for_attribute"
+    }
+  ],
+  "retired": false
+}
+</code></pre><h2 id='delete-a-provider'>Delete a provider</h2>
+<ul>
+<li><p>Delete or retire a target provider by its UUID. Returns a <code>404 Not Found</code> status if provider not exists.If user not logged 
+in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be retired unless purge = ‘true’</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /provider/:target_provider_uuid?purge=true
+</code></pre><h2 id='list-provider-attribute-sub-resources'>List provider attribute sub resources</h2>
+<ul>
+<li><h3 id='list-all-provider-attribute-sub-resources-for-a-provider'>List all provider attribute sub resources for a provider.</h3>
+<p>Retrieve all <strong>provider attribute</strong> sub resources of an  <strong>provider</strong> resource by target_provider_uuid. Returns a 
+<code>404 Not Found</code> status if provider attribute not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /provider/:target_provider_uuid/attribute 
+</code></pre>
+<ul>
+<li><h3 id='list-provider-attribute-sub-resources-by-it-39-s-uuid-and-parent-provider-uuid'>List provider attribute sub resources by it&#39;s UUID and parent provider UUID.</h3>
+<p>Retrieve an <strong>provider attribute</strong> sub resources of a <strong>provider</strong> resource. Returns a <code>404 Not Found</code> status if provider 
+ attribute not exists. If you are not logged in to perform this action, a <code>401 Unauthorized</code> status
+ returned.</p></li>
+</ul>
+<pre class="highlight shell_session"><code>GET /provider/:target_provider_uuid/attribute/:target_provider_attribute_uuid
+</code></pre><h2 id='create-a-provider-attribute-sub-resource-with-properties'>Create a provider attribute sub resource with properties</h2>
+<ul>
+<li><p>To Create an attribute sub resource for a specific provider resource you need to specify below attributes in the request body.
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='attributes-3'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>attributeType</em></td>
+<td><code>Attribute_Type UUID</code></td>
+<td>Create Attribute from this Attribute_Type (required)</td>
+</tr>
+<tr>
+<td><em>value</em></td>
+<td><code>Depends on Attribute_Type Selected</code></td>
+<td>Value for the attribute (required)</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST provider/:target_provider_uuid/attribute 
+{
+  "attributeType": "target_provider_attribute_type_uuid",
+  "value": "New provider"
+}
+</code></pre><h2 id='update-provider-attribute-sub-resource'>Update provider attribute sub resource</h2>
+<ul>
+<li><p>Updates an provider attribute sub resource value with given uuid, this method will only modify value of the sub resource. Returns 
+a <code>404 Not Found</code> status if provider attribute not exists. If user not logged in to perform this action, a <code>401 Unauthorized</code> status
+returned.</p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>parent_uuid</em></td>
+<td><code>Provider UUID</code></td>
+<td>Target provider resource UUID</td>
+</tr>
+<tr>
+<td><em>uuid</em></td>
+<td><code>Provider_Attribute UUID</code></td>
+<td>Target provider attribute resource UUID</td>
+</tr>
+</tbody></table>
+<h4 id='attributes-4'>Attributes</h4>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>attributeType</em></td>
+<td><code>Attribute_Type UUID</code></td>
+<td>Create Attribute from this Attribute_Type</td>
+</tr>
+<tr>
+<td><em>value</em></td>
+<td><code>Depends on Attribute_Type Selected</code></td>
+<td>Value for the attribute</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>POST provider/:target_provider_uuid/attribute/:target_provider_attribute_uuid
+{
+    "attributeType": "target_provider_attribute_type_uuid",
+    "value": "New provider"
+}
+</code></pre><h2 id='delete-provider-attribute-sub-resource'>Delete provider attribute sub resource</h2>
+<ul>
+<li><p>Delete or Retire a target provider attribute sub resource by its UUID. Returns a <code>404 Not Found</code> status if attribute not exists. 
+If user not logged in to perform this action, a <code>401 Unauthorized</code> status returned.</p>
+<h3 id='query-parameters-4'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><em>purge</em></td>
+<td><code>Boolean</code></td>
+<td>The resource will be retired unless purge = ‘true’. Purging will attempt to irreversibly remove the provider attribute type from the system. Provider attribute types that have been used (i.e., are referenced from existing data) cannot be purged.</td>
+</tr>
+</tbody></table></li>
+</ul>
+<pre class="highlight shell_session"><code>DELETE /provider/:target_provider_uuid/attribute/:target_provider_attribute_uuid
+</code></pre>
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">shell</a>
+                <a href="#" data-language-name="java">java</a>
+                <a href="#" data-language-name="python">python</a>
+                <a href="#" data-language-name="node.js">node.js</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<h1 id='authentication'>Authentication</h1>
+<ul>
+<li><p>Almost every API endpoint(other than the /session endpoint) in  OpenMRS API requires an authenticated user in order to interact.</p></li>
+<li><p>There is a filter defined on the module that intercepts all calls and authenticates the given request. </p></li>
+<li><p>Currently, only BASIC authentication is supported. Along with the HTTP request, a request header of <b> Authorization: Basic 
+(base64 of username:password) </b> needs to be sent.</p></li>
+</ul>
+
+<p><b>Alternatively, a session token can be used to interact with the API endpoints.</b></p>
+<h2 id='retrieve-session-token'>Retrieve session token</h2><pre class="highlight shell_session"><code>GET /openmrs/ws/rest/v1/session 
+-H 'Authorization: Basic Auth' (required to indetify the user)
+</code></pre>
+<p>This token should be passed with all subsequent calls as a cookie named <b>jsessionid=token</b>.</p>
+<h2 id='logout-user-end-session'>Logout User/End session</h2><pre class="highlight shell_session"><code>DELETE /openmrs/ws/rest/v1/session -H 'Accept: application/json'
+-H 'Authorization: Basic Auth' (required to indetify the user)
+</code></pre><h2 id='changing-password'>Changing Password</h2>
+<p><b>Since version 2.17 of the webservices.rest module:</b></p>
+
+<ul>
+<li>An administrator (with the EDIT_USER_PASSWORDS privilege) can change the password for other users.</li>
+</ul>
+<pre class="highlight shell_session"><code>POST /openmrs/ws/rest/v1/password/target_user-UUID 
+{
+  "oldPassword" : "oldPassword",
+  "newPassword" : "newPassword"
+}
+</code></pre>
+<ul>
+<li>After authenticating user can change their own password, by</li>
+</ul>
+<pre class="highlight shell_session"><code>POST /openmrs/ws/rest/v1/password 
+{
+  "oldPassword" : "oldPassword",
+  "newPassword" : "newPassword"
+}
+</code></pre><h2 id='getting-all-location-without-authentication'>Getting all location without authentication</h2>
+<p>Fetching locations requires you to <b> authenticate the user first </b>.If it is required to display all locations prior to login 
+or without authentication you can do it by </p>
+<pre class="highlight shell_session"><code>GET /openmrs/ws/rest/v1/location?tag=Login%25Location' 
+</code></pre>
