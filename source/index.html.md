@@ -27,6 +27,7 @@ includes:
   - Encounter/encounter
   - Encounter/encounter_type
   - Encounter/encounter_role
+  - Provider/provider
 
   
 
